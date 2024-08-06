@@ -1,0 +1,19 @@
+.support-block img{
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-bottom: 3.5rem;
+}
+.home__page__twitte__icon img{
+    width: 40px;
+    height: auto;
+}
+.support-content-item img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 2.2rem;
+}
+.Christine__news__page__social__links{
+
+}

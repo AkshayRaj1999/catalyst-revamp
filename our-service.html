@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="preload" href="./assets/css/swiper.bundle.css" as="style" onload="this.rel='stylesheet'">
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/new-style.css">
+    <link rel="stylesheet" href="./assets/css/custom-style.css">
+    <link rel="stylesheet" href="./assets/js/Swiper/6.3.5/swiper-bundle.min.css">
+    <title>Catalyst</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="overlay"
+        style="background: #000;display: none; position: fixed;top: 0; right: 0; bottom: 0;left: 0;opacity: 0.5;z-index: 1001"
+        onclick="off()">
+        <div id="divLoading"><img style="top: 35%;left: 49%;position: fixed;z-index:5; height:60px"
+                src="./assets/images/catalyst-loader.gif" alt="Loading, please wait" />
+        </div>
+    </div>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand main" href="#" rel="noopener">
+                <img src="./assets/images/catalyst-logo.png" class="img-fluid" alt="catalyst-logo" width="183"
+                    height="120" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav naviation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link dropdown">
+                            <a>
+                                Catalyzers
+                            </a>
+                            <i class="arrow down"></i>
+                        </span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Our Services
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Our Startups
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Who Can Apply
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link dropdown">
+                            <a href="#">
+                                Media
+                            </a>
+                            <i class="arrow down"></i>
+                        </span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Events
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li>
+                        <a class="btn btn-primary apply-btn" href="#">Apply Now</a>
+                    </li>
+                    <li class="search-wrapper">
+                        <span class="icon-search" id="search-box-icon"></span>
+                        <input class="form-control" type="search" id="search-box-query" placeholder="Search"
+                            aria-label="Search">
+                    </li>
+                    <li>
+                        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="inner-page services-page">
+        <div class="inner-banner">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Catalyzers</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Our Services</a>
+                    </li>
+                </ul>
+                <h2 class="inner-page-title">Our Services</h2>
+                <p class="page-description">
+                </p>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="container top">
+                <div class="row top">
+                    <div class="col-md-12">
+                        <h3 class="inner-page-subtitle">Mentoring</h3>
+                        <div class="description">
+                            <p style="text-align: center;">The Catalyst is always striving to engage with the best. Our
+                                refreshed group of Mentors is coming soon. <br />
+                                Stay Tuned!</p>
+                        </div>
+                        <div class="mentours-list">
+                            <h4 class="inner-section-title">Meet our Mentors</h4>
+                            <div class="five-columns-layout">
+                                <div class="block">
+                                    <div class="img-wrapper">
+                                        <img src="./assets/images/our-service/coming-soon.jpg" class="img-fluid"
+                                            alt="mentor" width="200" height="238" />
+                                    </div>
+                                    <a href="#" class="title-wrapper">
+                                        <h5 class="member-name"></h5>
+                                    </a>
+                                    <p class="description"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="support">
+                <div class="container">
+                    <div class="support-header">
+                        <h3 class="inner-page-subtitle">Support</h3>
+                        <div class="support-header-concern">
+                            <p class="support-header-text">Have a question? Concern? Request?</p>
+                            <p class="support-header-text">We’d love to hear from you. Connect with us through the
+                                following ways.</p>
+                        </div>
+                        <div class="support-header-contact">
+                            <a href="tel:+97126537242">
+                                <span class="icon-phone"></span>
+                                <span class="contact">+971 2 653 7242</span>
+                            </a>
+                            <a href="mailto:info@catalyst.ae">
+                                <span class="icon-envelope"></span>
+                                <span class="contact">info@catalyst.ae</span>
+                            </a>
+                        </div>
+                        <p class="support-header-text">Catalyst, having the two shareholders MASDAR &amp; BP, provides
+                            immeasurable priceless support in terms of: </p>
+                    </div>
+                    <div class="support-content">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="support-content-item">
+                                    <img src="./assets/images/our-service/goal.png" alt="business development">
+                                    <!-- <span class="icon-book"></span> -->
+                                    <h5>Mentoring in business development</h5>
+                                    <p class="support-content-item-text"></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="support-content-item">
+                                    <img src="./assets/images/our-service/task.png" alt="Strategic planning">
+                                    <!-- <span class="icon-implementation"></span> -->
+                                    <h5>Strategic planning</h5>
+                                    <p class="support-content-item-text" ></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="support-content-item">
+                                    <img src="./assets/images/our-service/test.png" alt="R&D, testing and commissioning">
+                                    <!-- <span class="icon-training"></span> -->
+                                    <h5>R&D, testing and commissioning</h5>
+                                    <p class="support-content-item-text" ></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="support-content-item">
+                                    <img src="./assets/images/our-service/legal-white.png" alt="Legal affairs">
+                                    <!-- <span class="icon-basic-knowledge"></span> -->
+                                    <h5>Legal affairs</h5>
+                                    <p class="support-content-item-text" ></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="support-content-item">
+                                    <img src="./assets/images/our-service/public-relation.png" alt="Marketing and public relations">
+                                    <!-- <svg viewbox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <filter id="a">
+                                                <fecolormatrix in="SourceGraphic"
+                                                    values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0">
+                                                </fecolormatrix>
+                                            </filter>
+                                        </defs>
+                                        <g filter="url(#a)" fill="none" fill-rule="evenodd">
+                                            <path
+                                                d="M52.03 19.37a3.713 3.713 0 0 1 3.71 3.708v2.9c0 .785.71 1.7 1.55 1.998.781.278 1.558.603 2.31.966.296.144.649.22 1.02.22.592 0 1.144-.198 1.475-.53l2.065-2.064c.7-.7 1.632-1.086 2.622-1.086.991 0 1.922.385 2.623 1.086l3.35 3.35a3.713 3.713 0 0 1 0 5.246l-2.064 2.064c-.554.555-.697 1.698-.31 2.497.363.751.688 1.527.964 2.306.299.84 1.214 1.55 1.998 1.55h2.9a3.716 3.716 0 0 1 3.71 3.71v4.74a3.713 3.713 0 0 1-3.709 3.71h-2.9c-.784 0-1.699.71-1.997 1.55-.277.779-.6 1.555-.963 2.305-.386.8-.244 1.943.31 2.498l2.063 2.063a3.715 3.715 0 0 1 0 5.246l-3.351 3.354a3.684 3.684 0 0 1-2.624 1.087c-.99 0-1.921-.385-2.622-1.086l-2.064-2.064c-.332-.332-.885-.53-1.48-.53-.365 0-.727.077-1.018.218-.75.362-1.527.687-2.307.964-.84.298-1.55 1.213-1.55 1.997v2.9a3.713 3.713 0 0 1-3.71 3.71h-4.739a3.713 3.713 0 0 1-3.709-3.71v-2.9c0-.784-.71-1.7-1.55-1.998-.78-.276-1.554-.6-2.305-.964a2.35 2.35 0 0 0-1.018-.218c-.595 0-1.148.198-1.48.53l-2.064 2.065c-.7.7-1.632 1.086-2.623 1.086-.99 0-1.922-.386-2.623-1.086l-3.355-3.356a3.713 3.713 0 0 1 0-5.245l2.064-2.065c.556-.555.7-1.7.313-2.498a22.944 22.944 0 0 1-.964-2.304c-.298-.84-1.213-1.55-1.998-1.55h-2.9a3.713 3.713 0 0 1-3.709-3.71v-4.739a3.713 3.713 0 0 1 3.71-3.709h2.899c.785 0 1.7-.71 1.998-1.55.276-.78.6-1.555.963-2.305.386-.8.244-1.943-.312-2.498l-2.064-2.065a3.685 3.685 0 0 1-1.086-2.622c0-.991.386-1.923 1.087-2.623l3.354-3.352c.7-.7 1.632-1.086 2.622-1.086.991 0 1.923.386 2.624 1.087l2.06 2.06c.333.332.886.53 1.48.53.366 0 .728-.077 1.019-.218.75-.363 1.527-.687 2.307-.964.84-.298 1.55-1.213 1.55-1.998v-2.9a3.713 3.713 0 0 1 3.71-3.709zm-2.37 19.42c-5.992 0-10.869 4.877-10.869 10.87 0 5.994 4.877 10.87 10.87 10.87 5.993 0 10.87-4.876 10.87-10.87 0-5.993-4.877-10.87-10.87-10.87zM16.95 0a2.475 2.475 0 0 1 2.472 2.474v1.452c0 .11.166.345.364.415.41.145.82.316 1.215.508a.57.57 0 0 0 .24.048c.16 0 .27-.052.302-.084l1.032-1.032a2.458 2.458 0 0 1 1.749-.724c.66 0 1.281.257 1.748.724l1.675 1.675a2.476 2.476 0 0 1 0 3.497l-1.032 1.032c-.077.078-.125.357-.035.542.191.395.362.804.508 1.215.07.198.305.364.415.364h1.452a2.475 2.475 0 0 1 2.473 2.473v2.37a2.475 2.475 0 0 1-2.473 2.472h-1.452c-.11 0-.345.167-.415.364-.146.41-.317.82-.509 1.217-.089.185-.041.464.036.542l1.032 1.032a2.476 2.476 0 0 1 0 3.496l-1.675 1.676a2.455 2.455 0 0 1-1.748.724c-.66 0-1.282-.257-1.749-.724l-1.032-1.033c-.033-.032-.143-.083-.301-.083a.572.572 0 0 0-.241.047c-.396.192-.805.363-1.215.509-.198.07-.364.304-.364.415v1.452a2.475 2.475 0 0 1-2.473 2.472h-2.37a2.476 2.476 0 0 1-2.472-2.472v-1.453c0-.11-.167-.345-.365-.415-.41-.145-.819-.316-1.215-.508a.572.572 0 0 0-.24-.048c-.16 0-.27.052-.302.084l-1.032 1.032a2.455 2.455 0 0 1-1.748.724c-.66 0-1.282-.257-1.749-.724l-1.675-1.675a2.456 2.456 0 0 1-.725-1.748c0-.66.258-1.282.724-1.749l1.033-1.032c.077-.078.125-.357.035-.542a11.956 11.956 0 0 1-.508-1.215c-.07-.198-.305-.364-.415-.364H2.472A2.475 2.475 0 0 1 0 16.949v-2.37a2.475 2.475 0 0 1 2.473-2.472h1.452c.11 0 .345-.167.415-.365.146-.41.317-.82.509-1.215.089-.185.041-.464-.036-.541L3.78 8.954a2.476 2.476 0 0 1 0-3.498l1.675-1.675a2.455 2.455 0 0 1 1.749-.724c.66 0 1.281.257 1.748.724l1.033 1.032c.032.032.142.083.3.083.09 0 .178-.017.24-.047.395-.19.804-.362 1.217-.509.197-.07.364-.304.364-.414V2.474A2.475 2.475 0 0 1 14.579 0zm-1.186 10.947a4.822 4.822 0 0 0-4.817 4.817 4.822 4.822 0 0 0 4.817 4.816 4.822 4.822 0 0 0 4.817-4.816 4.822 4.822 0 0 0-4.817-4.817z"
+                                                stroke="#047CC1" stroke-width="4"></path>
+                                        </g>
+                                    </svg> -->
+                                    <h5>Marketing and public relations</h5>
+                                    <p class="support-content-item-text" ></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="support-content-item">
+                                    <img src="./assets/images/our-service/ict.png" alt="ICT">
+                                    <!-- <span class="icon-planning"></span> -->
+                                    <h5>ICT</h5>
+                                    <p class="support-content-item-text" ></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="support-content-item">
+                                    <img src="./assets/images/our-service/hr.png" alt="Human resources">
+                                    <!-- <span class="icon-troubleshooting"></span> -->
+                                    <h5>Human resources</h5>
+                                    <p class="support-content-item-text"></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="support-content-item">
+                                    <img src="./assets/images/our-service/web-design.png" alt="Web design and content management">
+                                    <!-- <span class="icon-customer-service"></span> -->
+                                    <h5>Web design and content management</h5>
+                                    <p class="support-content-item-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="training">
+                <div class="container border-bottom-arrow">
+                    <h3 style="text-align: center;" class="inner-page-subtitle">Training</h3>
+                    <div class="description">
+                        <p style="text-align: center; padding-right:0;">The Catalyst is currently rebuilding it’s pool
+                            of professional services’ providers. <br />Watch this Page! Or Stay Tuned! </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="./assets/images/catalyst-footer-logo.png" class="img-fluid" alt="catalyst"
+                        width="183" height="120" /></a>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row links-row-top">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a href="#">
+                                        HOME
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            About Us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a>
+                                        CATALYZERS
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            Our Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Our Startups
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Who Can Apply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            FAQs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a href="#">
+                                        MEDIA
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            Events
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul class="footer-links dark">
+                                <li class="group-label">
+                                    <a href="#">
+                                        CONTACT US
+                                    </a>
+                                </li>
+                                <li class="group-label">
+                                    <a href="#">
+                                        JOIN US
+                                    </a>
+                                </li>
+                                <li class="group-label">
+                                    <a href="#">
+                                        SITE MAP
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-links footer-right">
+                        <div class="group-label">Newsletter Subscription</div>
+                        <div class="contact">
+                            <p>Please submit your email to stay up to date with our news.</p>
+                            <div class="form">
+                                <input type="checkbox" checked="checked" class="custom-control-input"
+                                    id="cbNewsletterAgree" style="display:none">
+                                <input type="email" name="email" id="txtEmailNewsletterSub" placeholder="Email address">
+                                <a style="cursor:pointer" id="save-email">Sign up</a>
+                            </div>
+                            <p id="newsletter-invalid-email-message" class="msg error" style="display:none;">Please
+                                enter valid email</p>
+                            <p id="newsletter-email-exist" class="msg error" style="display:none;">Email Address Already
+                                Exists</p>
+                            <p id="newsletter-fail-message" class="msg error" style="display:none;">Email subscription
+                                faliure, please try again later.</p>
+                            <p id="newsletter-success-message" class="msg success" style="display:none;">You have
+                                successfully subscribed to Newsletter!</p>
+                        </div>
+                        <div class="initiative">
+                            <div class="group-label">Initiative by</div>
+                            <div class="initiative-logo">
+                                <a><img src="./assets/images/bg-group-logo.png" class="bp img-fluid" alt="initiative"
+                                        width="55" height="74" /></a>
+                                <a target="_blank" rel="noopener noreferrer" href="#"><img
+                                        src="./assets/images/Masdar-City-logo.png" class="masdar img-fluid"
+                                        alt="initiative" width="3374" height="549" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom">
+                        <div class="wrapper copyright">
+                            <p>
+                                © 2024 Catalyst
+                            </p>
+                        </div>
+                        <div class="wrapper social-links">
+                            <a href="#" class="privacy-terms" style="display:none">Privacy policy</a>
+                            <a href="#" class="privacy-terms">Term of service</a>
+                            <div class="social-icons">
+                                <a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.linkedin.com/company/catalystuae/">
+                                    <span class="icon-linkedin-logo"></span>
+                                </a><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/catalystuae">
+                                    <span class="icon-social-network-twitter"></span>
+                                </a><a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.instagram.com/catalystuae/"> <span
+                                        class="icon-social-network-instagram"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="GoTotop"><span class="icon-up-arrow"><span class="path1"></span><span class="path2"></span></span></div>
+    <input type="hidden" id="sitekey" value="6LeHflUmAAAAAFI-_rB4YWt_q3nii1xrKAAtEBPr">
+
+    <script type="text/javascript" src="./assets/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="./assets/js/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/Swiper/6.3.5/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/catalyst-js.js"></script>
+    <script type="text/javascript" src="./assets/js/select2/4.0.13/js/select2.min.js"
+        integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

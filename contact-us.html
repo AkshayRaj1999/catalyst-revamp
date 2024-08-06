@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="preload" href="./assets/css/swiper.bundle.css" as="style" onload="this.rel='stylesheet'">
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/new-style.css">
+    <link rel="stylesheet" href="./assets/css/custom-style.css">
+    <link rel="stylesheet" href="./assets/js/Swiper/6.3.5/swiper-bundle.min.css">
+    <title>Catalyst</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="overlay"
+        style="background: #000;display: none; position: fixed;top: 0; right: 0; bottom: 0;left: 0;opacity: 0.5;z-index: 1001"
+        onclick="off()">
+        <div id="divLoading"><img style="top: 35%;left: 49%;position: fixed;z-index:5; height:60px"
+                src="./assets/images/catalyst-loader.gif" alt="Loading, please wait" />
+        </div>
+    </div>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand main" href="#" rel="noopener">
+                <img src="./assets/images/catalyst-logo.png" class="img-fluid" alt="catalyst-logo" width="183"
+                    height="120" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav naviation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link dropdown">
+                            <a>
+                                Catalyzers
+                            </a>
+                            <i class="arrow down"></i>
+                        </span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Our Services
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Our Startups
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Who Can Apply
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link dropdown">
+                            <a href="#">
+                                Media
+                            </a>
+                            <i class="arrow down"></i>
+                        </span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Events
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li>
+                        <a class="btn btn-primary apply-btn" href="#">Apply Now</a>
+                    </li>
+                    <li class="search-wrapper">
+                        <span class="icon-search" id="search-box-icon"></span>
+                        <input class="form-control" type="search" id="search-box-query" placeholder="Search"
+                            aria-label="Search">
+                    </li>
+                    <li>
+                        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="inner-page contact-us-page">
+        <div class="inner-banner">
+            <div class="container">
+
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <h2 class="inner-page-title">Contact Us</h2>
+                <p class="page-description">
+                    Located in the heart of Masdar City, Catalyst is steps away from Masdar Free Zone; a One Stop Shop
+                    for idea owners to start becoming business entities within few days. Incubator Building, is home to
+                    500+ SMEs where not only doing everyday works, they can apply for Catalyst business accelerator
+                    funding as well. We do have support for business growth after we run the idea thru our internal
+                    investment committee.
+                </p>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="container top" id="contactusForm">
+                <div class="contact-form">
+                    <form>
+                        <div class="row top">
+                            <div class="col-md-12">
+                                <h4 class="inner-section-title">Send Message</h4>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-field">
+                                    <label for="name" class="input-label">Name<span class="required">*</span></label>
+                                    <input type="text" id="name" class="form-control validate required" maxlength="200"
+                                        placeholder="Enter your name">
+                                    <p class="error" style="display:none;">Please enter your name</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-field">
+                                    <label for="email" class="input-label">Email<span class="required">*</span></label>
+                                    <input type="email" id="email" class="form-control validate required"
+                                        maxlength="200" placeholder="Enter your email address">
+                                    <p class="error" style="display:none;">Please enter your email</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-field">
+                                    <label for="contact" class="input-label">Contact No<span
+                                            class="required">*</span></label>
+                                    <input type="tel" id="contact" class="form-control validate required" maxlength="13"
+                                        placeholder="Enter your phone number">
+                                    <p class="error" style="display:none;">Please enter your number</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-field">
+                                    <label for="message" class="input-label">Subject<span
+                                            class="required">*</span></label>
+                                    <textarea class="form-control validate required" maxlength="100"
+                                        placeholder="Say something ..." name="message" id="txtSubject"
+                                        rows="1"></textarea>
+                                    <p class="error" style="display:none;">Please enter your subject</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-field">
+                                    <label for="message" class="input-label">Comment<span
+                                            class="required">*</span></label>
+                                    <textarea class="form-control validate required" maxlength="1000"
+                                        placeholder="Please enter the comments" name="message" id="message"
+                                        rows="3"></textarea>
+                                    <p class="error" style="display:none;">Please enter your comments</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary" type="button" id="btnsubmitcontactus">Submit</button>
+                                <input type="reset" value="Reset" class="btn btn-primary cancel" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container top" id="thankYouMessage" style="display:none">
+                <div class="col-12"
+                    style="height: auto; flex-basis: auto !important; flex-grow: 0; flex-shrink: unset; margin: 2rem; width: auto;">
+                    <div class="apply-now-form contact-form">
+                        <div class="form-block" style="text-align:center">
+                            <div class="block-title">
+                                <h3 class="mb-0" style="font-size:50px; padding-bottom:15px">Thank You</h3>
+                                <p class="success pb-5 pt-0" id="contactFormSuccess" style="font-size: 30px;">
+                                    Application Form Success</p>
+
+                                <p class="error pb-5 pt-0" id="contactformError" style="font-size: 30px;">Application
+                                    Generic Error</p>
+                            </div>
+                            <div class="submit-butto" style="text-align: center; margin: 1rem; padding-bottom: 1rem;">
+                                <a href="https://catalyst.ae/en" class="btn btn-primary" style="margin: 1rem;">Back to
+                                    Home Page</a>
+                                <a href="#" class="btn btn-primary" style="margin: 1rem;">Try again</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="office-location">
+                <div class="container border-bottom-arrow">
+                    <div class="office-location-header">
+                        <div>
+                            <h4 class="inner-section-title">Catalyst Office Location</h4>
+                            <ul class="location">
+                                <li>
+                                    <span class="icon-clock2"></span>
+                                    Office Hours: 09:00 - 17:00 Monday - Friday
+                                </li>
+                                <li>
+                                    <span class="icon-phone"></span>
+                                    +971 2 653 7242
+                                </li>
+                                <li>
+                                    <span></span>
+                                    Tech Park, Masdar City <br />Abu Dhabi
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="btn btn-primary"
+                                href="https://www.google.com/maps/place/Catalyst+-+A+Masdar-BP+Initiative/24.440021,54.619195,17z/data=!4m5!3m4!1s0x0:0x36f541c0e61b93ad!8m2!3d24.4400214!4d54.6191953?hl=en"
+                                target="_blank" rel="noopener">Share Location</a>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1764.4496011401852!2d54.618551420553615!3d24.440242371490918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e49325160bb05%3A0x36f541c0e61b93ad!2sCatalyst%20-%20A%20Masdar-BP%20Initiative!5e0!3m2!1sen!2sin!4v1639634010606!5m2!1sen!2sin"
+                            height="500" style="border:0; width:100%" allowfullscreen="" loading="lazy" title="google-map"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="./assets/images/catalyst-footer-logo.png" class="img-fluid" alt="catalyst"
+                        width="183" height="120" /></a>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row links-row-top">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a href="#">
+                                        HOME
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            About Us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a>
+                                        CATALYZERS
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            Our Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Our Startups
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Who Can Apply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            FAQs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a href="#">
+                                        MEDIA
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            Events
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul class="footer-links dark">
+                                <li class="group-label">
+                                    <a href="#">
+                                        CONTACT US
+                                    </a>
+                                </li>
+                                <li class="group-label">
+                                    <a href="#">
+                                        JOIN US
+                                    </a>
+                                </li>
+                                <li class="group-label">
+                                    <a href="#">
+                                        SITE MAP
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-links footer-right">
+                        <div class="group-label">Newsletter Subscription</div>
+                        <div class="contact">
+                            <p>Please submit your email to stay up to date with our news.</p>
+                            <div class="form">
+                                <input type="checkbox" checked="checked" class="custom-control-input"
+                                    id="cbNewsletterAgree" style="display:none">
+                                <input type="email" name="email" id="txtEmailNewsletterSub" placeholder="Email address">
+                                <a style="cursor:pointer" id="save-email">Sign up</a>
+                            </div>
+                            <p id="newsletter-invalid-email-message" class="msg error" style="display:none;">Please
+                                enter valid email</p>
+                            <p id="newsletter-email-exist" class="msg error" style="display:none;">Email Address Already
+                                Exists</p>
+                            <p id="newsletter-fail-message" class="msg error" style="display:none;">Email subscription
+                                faliure, please try again later.</p>
+                            <p id="newsletter-success-message" class="msg success" style="display:none;">You have
+                                successfully subscribed to Newsletter!</p>
+                        </div>
+                        <div class="initiative">
+                            <div class="group-label">Initiative by</div>
+                            <div class="initiative-logo">
+                                <a><img src="./assets/images/bg-group-logo.png" class="bp img-fluid" alt="initiative"
+                                        width="55" height="74" /></a>
+                                <a target="_blank" rel="noopener noreferrer" href="#"><img
+                                        src="./assets/images/Masdar-City-logo.png" class="masdar img-fluid"
+                                        alt="initiative" width="3374" height="549" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom">
+                        <div class="wrapper copyright">
+                            <p>
+                                © 2024 Catalyst
+                            </p>
+                        </div>
+                        <div class="wrapper social-links">
+                            <a href="#" class="privacy-terms" style="display:none">Privacy policy</a>
+                            <a href="#" class="privacy-terms">Term of service</a>
+                            <div class="social-icons">
+                                <a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.linkedin.com/company/catalystuae/">
+                                    <span class="icon-linkedin-logo"></span>
+                                </a><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/catalystuae">
+                                    <span class="icon-social-network-twitter"></span>
+                                </a><a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.instagram.com/catalystuae/"> <span
+                                        class="icon-social-network-instagram"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="GoTotop"><span class="icon-up-arrow"><span class="path1"></span><span class="path2"></span></span></div>
+    <input type="hidden" id="sitekey" value="6LeHflUmAAAAAFI-_rB4YWt_q3nii1xrKAAtEBPr">
+
+    <script type="text/javascript" src="./assets/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="./assets/js/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/Swiper/6.3.5/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/catalyst-js.js"></script>
+    <script type="text/javascript" src="./assets/js/select2/4.0.13/js/select2.min.js"
+        integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

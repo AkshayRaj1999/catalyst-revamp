@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="preload" href="./assets/css/swiper.bundle.css" as="style" onload="this.rel='stylesheet'">
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/new-style.css">
+    <link rel="stylesheet" href="./assets/css/custom-style.css">
+    <link rel="stylesheet" href="./assets/js/Swiper/6.3.5/swiper-bundle.min.css">
+    <title>Catalyst</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="overlay"
+        style="background: #000;display: none; position: fixed;top: 0; right: 0; bottom: 0;left: 0;opacity: 0.5;z-index: 1001"
+        onclick="off()">
+        <div id="divLoading"><img style="top: 35%;left: 49%;position: fixed;z-index:5; height:60px"
+                src="./assets/images/catalyst-loader.gif" alt="Loading, please wait" />
+        </div>
+    </div>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand main" href="#" rel="noopener">
+                <img src="./assets/images/catalyst-logo.png" class="img-fluid" alt="catalyst-logo" width="183"
+                    height="120" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav naviation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link dropdown">
+                            <a>
+                                Catalyzers
+                            </a>
+                            <i class="arrow down"></i>
+                        </span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Our Services
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Our Startups
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Who Can Apply
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link dropdown">
+                            <a href="#">
+                                Media
+                            </a>
+                            <i class="arrow down"></i>
+                        </span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Events
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li>
+                        <a class="btn btn-primary apply-btn" href="#">Apply Now</a>
+                    </li>
+                    <li class="search-wrapper">
+                        <span class="icon-search" id="search-box-icon"></span>
+                        <input class="form-control" type="search" id="search-box-query" placeholder="Search"
+                            aria-label="Search">
+                    </li>
+                    <li>
+                        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="inner-page testimonials-page ourPartner-page">
+        <div class="inner-banner">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Catalyzers</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Our Partners</a>
+                    </li>
+                </ul>
+                <h2 class="inner-page-title">Our Startups</h2>
+                <p class="page-description">
+                    Startups supported by Catalyst towards a more sustainable world
+                </p>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="container top">
+                <div class="row top border-bottom-arrow">
+                    <div class="col-md-6 ourPartner-col">
+                        <div class="ourPartner-block-inner">
+                            <div class="ourPartner-card-img">
+                                <a href="https://www.hydro-art-pod.com/" target="_blank" rel="noopener">
+                                    <img src="./assets/images//our-startups/HydroArtPodByAlinePate.webp"
+                                        class="img-fluid" alt="HYDROART POD" width="94" height="100" />
+                                </a>
+                            </div>
+                            <h4>HYDROART POD</h4>
+                            <strong>Clever all-in one indoor home garden with smart functions</strong>
+                            <div class="description">
+                            </div>
+                            <div class="ourPartner-btn-wrap">
+                                <a href="https://www.hydro-art-pod.com/" class="btn btn-primary" target="_blank"
+                                    rel="noopener">
+                                    <span class="btn-value">Visit Website</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                                        <polygon
+                                            points="3.293 11.293 4.707 12.707 11 6.414 11 20 13 20 13 6.414 19.293 12.707 20.707 11.293 12 2.586 3.293 11.293" />
+                                    </svg>
+                                </a>
+                                <div class="btn-social-wrap">
+                                    <a href="https://www.facebook.com/HydroArtPod" class="btn btn-primary social-btn"
+                                        target="_blank" rel="noopener">
+                                        <span class="icon-facebook2"></span>
+                                    </a>
+                                    <a href="https://www.instagram.com/hydroartpod/?hl=en"
+                                        class="btn btn-primary social-btn" target="_blank" rel="noopener">
+                                        <span class="icon-instagram"></span>
+                                    </a>
+                                    <a href="https://twitter.com/byPateAline" class="btn btn-primary social-btn"
+                                        target="_blank">
+                                        <span class="icon-twitter-square"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ourPartner-col">
+                        <div class="ourPartner-block-inner">
+                            <div class="ourPartner-card-img">
+                                <a href="https://www.circabio.tech/">
+                                    <img src="./assets/images/our-startups/CB.webp"
+                                        class="img-fluid" alt="" width="160" height="100" />
+                                </a>
+                            </div>
+                            <h4>CIRCA BIOTECH</h4>
+                            <strong>Upcycling food waste into high-quality animal feed components using insect farming
+                                (BSF)</strong>
+                            <div class="description">
+                            </div>
+                            <div class="ourPartner-btn-wrap">
+                                <a href="https://www.circabio.tech/" class="btn btn-primary" target="_blank">
+                                    <span class="btn-value">Visit Website</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                                        <polygon
+                                            points="3.293 11.293 4.707 12.707 11 6.414 11 20 13 20 13 6.414 19.293 12.707 20.707 11.293 12 2.586 3.293 11.293" />
+                                    </svg>
+                                </a>
+                                <div class="btn-social-wrap">
+                                    <a href="https://www.instagram.com/circa_biotech/?hl=en"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-instagram"></span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/circa-biotech/"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-linkedin"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ourPartner-col">
+                        <div class="ourPartner-block-inner">
+                            <div class="ourPartner-card-img">
+                                <a href="https://www.keytechnologies.ae/">
+                                    <img src="./assets/images/our-startups/KeyTech.png"
+                                        class="img-fluid" alt="" width="237" height="100" />
+                                </a>
+                            </div>
+                            <h4>KEY TECHNOLOGIES</h4>
+                            <strong>Turn-key solutions for extra-long-range surveillance systems</strong>
+                            <div class="description">
+                            </div>
+                            <div class="ourPartner-btn-wrap">
+                                <a href="https://www.keytechnologies.ae/" class="btn btn-primary" target="_blank">
+                                    <span class="btn-value">Visit Website</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                                        <polygon
+                                            points="3.293 11.293 4.707 12.707 11 6.414 11 20 13 20 13 6.414 19.293 12.707 20.707 11.293 12 2.586 3.293 11.293" />
+                                    </svg>
+                                </a>
+                                <div class="btn-social-wrap">
+                                    <a href="https://www.linkedin.com/company/key-technologies-uae"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-linkedin"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ourPartner-col">
+                        <div class="ourPartner-block-inner">
+                            <div class="ourPartner-card-img">
+                                <a href="https://qsmonitor.com/">
+                                    <img src="./assets/images/our-startups/QS.png"
+                                        class="img-fluid" alt="" width="213" height="100" />
+                                </a>
+                            </div>
+                            <h4>QS MONITOR</h4>
+                            <strong>Online platform for optimisation of food import licensing and timelines</strong>
+                            <div class="description">
+                            </div>
+                            <div class="ourPartner-btn-wrap">
+                                <a href="https://qsmonitor.com/" class="btn btn-primary" target="_blank">
+                                    <span class="btn-value">Visit Website</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                                        <polygon
+                                            points="3.293 11.293 4.707 12.707 11 6.414 11 20 13 20 13 6.414 19.293 12.707 20.707 11.293 12 2.586 3.293 11.293" />
+                                    </svg>
+                                </a>
+                                <div class="btn-social-wrap">
+                                    <a href="https://www.facebook.com/QSMonitor/" class="btn btn-primary social-btn"
+                                        target="_blank">
+                                        <span class="icon-facebook2"></span>
+                                    </a>
+                                    <a href="https://www.instagram.com/qsmonitor/" class="btn btn-primary social-btn"
+                                        target="_blank">
+                                        <span class="icon-instagram"></span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/qs-monitor/"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-linkedin"></span>
+                                    </a>
+                                    <a href="https://twitter.com/qsmonitor" class="btn btn-primary social-btn"
+                                        target="_blank">
+                                        <span class="icon-twitter-square"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ourPartner-col">
+                        <div class="ourPartner-block-inner">
+                            <div class="ourPartner-card-img">
+                                <a href="https://volts.ae/">
+                                    <img src="./assets/images/our-startups/Volts.png"
+                                        class="img-fluid" alt="" width="195" height="100" />
+                                </a>
+                            </div>
+                            <h4>VOLTS BATTERY STORAGE</h4>
+                            <strong>Home smart battery management system</strong>
+                            <div class="description">
+                            </div>
+                            <div class="ourPartner-btn-wrap">
+                                <a href="https://volts.ae/" class="btn btn-primary" target="_blank">
+                                    <span class="btn-value">Visit Website</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                                        <polygon
+                                            points="3.293 11.293 4.707 12.707 11 6.414 11 20 13 20 13 6.414 19.293 12.707 20.707 11.293 12 2.586 3.293 11.293" />
+                                    </svg>
+                                </a>
+                                <div class="btn-social-wrap">
+                                    <a href="https://www.facebook.com/voltsbattery/" class="btn btn-primary social-btn"
+                                        target="_blank">
+                                        <span class="icon-facebook2"></span>
+                                    </a>
+                                    <a href="https://www.instagram.com/voltsbattery/?hl=en"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-instagram"></span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/voltsbattery/"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-linkedin"></span>
+                                    </a>
+                                    <a href="https://twitter.com/VOLTS_Ltd" class="btn btn-primary social-btn"
+                                        target="_blank">
+                                        <span class="icon-twitter-square"></span>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCbKAyChJ8wY8H5wluA28MnA?roistat_visit=163334"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-youtube"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ourPartner-col">
+                        <div class="ourPartner-block-inner">
+                            <div class="ourPartner-card-img">
+                                <a href="https://seramic.eco/materials/">
+                                    <img src="./assets/images/our-startups/seramic.png"
+                                        class="img-fluid" alt="" width="200" height="100" />
+                                </a>
+                            </div>
+                            <h4>SERAMIC MATERIALS</h4>
+                            <strong>Production of technical ceramics and building materials from industrial
+                                waste</strong>
+                            <div class="description">
+                            </div>
+                            <div class="ourPartner-btn-wrap">
+                                <a href="https://seramic.eco/materials/" class="btn btn-primary" target="_blank">
+                                    <span class="btn-value">Visit Website</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                                        <polygon
+                                            points="3.293 11.293 4.707 12.707 11 6.414 11 20 13 20 13 6.414 19.293 12.707 20.707 11.293 12 2.586 3.293 11.293" />
+                                    </svg>
+                                </a>
+                                <div class="btn-social-wrap">
+                                    <a href="https://www.facebook.com/Seramic.eco" class="btn btn-primary social-btn"
+                                        target="_blank">
+                                        <span class="icon-facebook2"></span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/seramic-eco/"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-linkedin"></span>
+                                    </a>
+                                    <a href="https://twitter.com/seramic_mat" class="btn btn-primary social-btn"
+                                        target="_blank">
+                                        <span class="icon-twitter-square"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ourPartner-col">
+                        <div class="ourPartner-block-inner">
+                            <div class="ourPartner-card-img">
+                                <a href="http://www.delarta.com/">
+                                    <img src="./assets/images/our-startups/Delarta.png"
+                                        class="img-fluid" alt="" width="169" height="100" />
+                                </a>
+                            </div>
+                            <h4>DE L&#39;ARTA</h4>
+                            <strong>Creating a sustainable skincare range using native UAE flora</strong>
+                            <div class="description">
+                            </div>
+                            <div class="ourPartner-btn-wrap">
+                                <a href="http://www.delarta.com/" class="btn btn-primary" target="_blank">
+                                    <span class="btn-value">Visit Website</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                                        <polygon
+                                            points="3.293 11.293 4.707 12.707 11 6.414 11 20 13 20 13 6.414 19.293 12.707 20.707 11.293 12 2.586 3.293 11.293" />
+                                    </svg>
+                                </a>
+                                <div class="btn-social-wrap">
+                                    <a href="https://www.facebook.com/DeLArtaOutdoorLivingLaboratory/"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-facebook2"></span>
+                                    </a>
+                                    <a href="https://www.instagram.com/de_larta/?hl=en"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-instagram"></span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/de-l-arta-outdoor-living-laboratory/"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-linkedin"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ourPartner-col">
+                        <div class="ourPartner-block-inner">
+                            <div class="ourPartner-card-img">
+                                <a href="http://solvatechnologies.com/">
+                                    <img src="./assets/images/our-startups/Solva.png"
+                                        class="img-fluid" alt="" width="74" height="100" />
+                                </a>
+                            </div>
+                            <h4>SOLVA TECHNOLOGIES</h4>
+                            <strong>E-logistics with electric motor bike and food delivery</strong>
+                            <div class="description">
+                            </div>
+                            <div class="ourPartner-btn-wrap">
+                                <a href="http://solvatechnologies.com/" class="btn btn-primary" target="_blank">
+                                    <span class="btn-value">Visit Website</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+                                        <polygon
+                                            points="3.293 11.293 4.707 12.707 11 6.414 11 20 13 20 13 6.414 19.293 12.707 20.707 11.293 12 2.586 3.293 11.293" />
+                                    </svg>
+                                </a>
+                                <div class="btn-social-wrap">
+                                    <a href="https://www.facebook.com/solvatechnologies/"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-facebook2"></span>
+                                    </a>
+                                    <a href="https://www.instagram.com/Solvatechnologies/?hl=en"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-instagram"></span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/solva-technologies/"
+                                        class="btn btn-primary social-btn" target="_blank">
+                                        <span class="icon-linkedin"></span>
+                                    </a>
+                                    <a href="https://twitter.com/solvatech" class="btn btn-primary social-btn"
+                                        target="_blank">
+                                        <span class="icon-twitter-square"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="./assets/images/catalyst-footer-logo.png" class="img-fluid" alt="catalyst"
+                        width="183" height="120" /></a>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row links-row-top">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a href="#">
+                                        HOME
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            About Us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a>
+                                        CATALYZERS
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            Our Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Our Startups
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Who Can Apply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            FAQs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a href="#">
+                                        MEDIA
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            Events
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul class="footer-links dark">
+                                <li class="group-label">
+                                    <a href="#">
+                                        CONTACT US
+                                    </a>
+                                </li>
+                                <li class="group-label">
+                                    <a href="#">
+                                        JOIN US
+                                    </a>
+                                </li>
+                                <li class="group-label">
+                                    <a href="#">
+                                        SITE MAP
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-links footer-right">
+                        <div class="group-label">Newsletter Subscription</div>
+                        <div class="contact">
+                            <p>Please submit your email to stay up to date with our news.</p>
+                            <div class="form">
+                                <input type="checkbox" checked="checked" class="custom-control-input"
+                                    id="cbNewsletterAgree" style="display:none">
+                                <input type="email" name="email" id="txtEmailNewsletterSub" placeholder="Email address">
+                                <a style="cursor:pointer" id="save-email">Sign up</a>
+                            </div>
+                            <p id="newsletter-invalid-email-message" class="msg error" style="display:none;">Please
+                                enter valid email</p>
+                            <p id="newsletter-email-exist" class="msg error" style="display:none;">Email Address Already
+                                Exists</p>
+                            <p id="newsletter-fail-message" class="msg error" style="display:none;">Email subscription
+                                faliure, please try again later.</p>
+                            <p id="newsletter-success-message" class="msg success" style="display:none;">You have
+                                successfully subscribed to Newsletter!</p>
+                        </div>
+                        <div class="initiative">
+                            <div class="group-label">Initiative by</div>
+                            <div class="initiative-logo">
+                                <a><img src="./assets/images/bg-group-logo.png" class="bp img-fluid" alt="initiative"
+                                        width="55" height="74" /></a>
+                                <a target="_blank" rel="noopener noreferrer" href="#"><img
+                                        src="./assets/images/Masdar-City-logo.png" class="masdar img-fluid"
+                                        alt="initiative" width="3374" height="549" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom">
+                        <div class="wrapper copyright">
+                            <p>
+                                © 2024 Catalyst
+                            </p>
+                        </div>
+                        <div class="wrapper social-links">
+                            <a href="#" class="privacy-terms" style="display:none">Privacy policy</a>
+                            <a href="#" class="privacy-terms">Term of service</a>
+                            <div class="social-icons">
+                                <a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.linkedin.com/company/catalystuae/">
+                                    <span class="icon-linkedin"></span>
+                                </a><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/catalystuae">
+                                    <span class="icon-twitter-square"></span>
+                                </a><a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.instagram.com/catalystuae/"> <span
+                                        class="icon-social-network-instagram"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="GoTotop"><span class="icon-up-arrow"><span class="path1"></span><span class="path2"></span></span></div>
+    <input type="hidden" id="sitekey" value="6LeHflUmAAAAAFI-_rB4YWt_q3nii1xrKAAtEBPr">
+
+    <script type="text/javascript" src="./assets/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="./assets/js/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/Swiper/6.3.5/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/catalyst-js.js"></script>
+    <script type="text/javascript" src="./assets/js/select2/4.0.13/js/select2.min.js"
+        integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

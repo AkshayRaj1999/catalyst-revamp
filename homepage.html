@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="preload" href="./assets/css/swiper.bundle.css" as="style" onload="this.rel='stylesheet'">
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/new-style.css">
+    <link rel="stylesheet" href="./assets/css/custom-style.css">
+    <link rel="stylesheet" href="./assets/js/Swiper/6.3.5/swiper-bundle.min.css">
+    <title>Catalyst</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="overlay"
+        style="background: #000;display: none; position: fixed;top: 0; right: 0; bottom: 0;left: 0;opacity: 0.5;z-index: 1001"
+        onclick="off()">
+        <div id="divLoading"><img style="top: 35%;left: 49%;position: fixed;z-index:5; height:60px"
+                src="./assets/images/catalyst-loader.gif" alt="Loading, please wait" />
+        </div>
+    </div>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand main" href="#" rel="noopener">
+                <img src="./assets/images/catalyst-logo.png" class="img-fluid" alt="catalyst-logo" width="183"
+                    height="120" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav naviation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link dropdown">
+                            <a>
+                                Catalyzers
+                            </a>
+                            <i class="arrow down"></i>
+                        </span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Our Services
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Our Startups
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Who Can Apply
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link dropdown">
+                            <a href="#">
+                                Media
+                            </a>
+                            <i class="arrow down"></i>
+                        </span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Events
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li>
+                        <a class="btn btn-primary apply-btn" href="#">Apply Now</a>
+                    </li>
+                    <li class="search-wrapper">
+                        <span class="icon-search" id="search-box-icon"></span>
+                        <input class="form-control" type="search" id="search-box-query" placeholder="Search"
+                            aria-label="Search">
+                    </li>
+                    <li>
+                        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="img-block">
+            <img src="#" data-src="./assets/images/banner-image.jpg" alt="banner"
+                class="img-fluid d-none d-md-block lazy" style="width: 1920px; height: 984px;">
+            <img src="#" data-src="./assets/images/banner-image-cropped-550x450.jpg" alt="banner"
+                class="img-fluid d-block d-md-none lazy" style="width: 550px; height: 450px;">
+        </div>
+        <div class="container">
+            <div class="banner-content">
+                <h1>First Technology Startup Accelerator Focused on Sustainability and Clean Technology</h1>
+                <div class="about-link">
+                    <a href="#">
+                        <span class="circle"><span class="icon-arrow-right"></span></span>
+                        <span class="label">More About Us</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="program-stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Program Stats</h2>
+                    <p class="title-text">Catalyst contribution towards achieving the Sustainable Development Goals</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="stats-block">
+                                <h2>8</h2>
+                                <span>Start-Ups</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="stats-block">
+                                <h2>up to 12</h2>
+                                <span>Months Acceleration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="stats-block">
+                                <h2>5-12%</h2>
+                                <span>Equity Stake</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="stats-block">
+                                <h2>In-Kind</h2>
+                                <span>Services</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="stats-block">
+                                <h2>Direct funding</h2>
+                                <span>Case by-case consideration</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="stats-block">
+                                <h2>$900K+</h2>
+                                <span>Invested to date</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="stats-block">
+                                <h2>1000+ entities</h2>
+                                <span>In Masdar Free Zone</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="startup-support">
+        <div class="container">
+            <h2 class="section-title text-center">How we support startups?</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="support-block">
+                        <img src="./assets/images/development.png" alt="Development">
+                        <!-- <span class="icon-mentoring icon">
+                        </span> -->
+                        <h3 class="title">Mentoring in Business Development</h3>
+                        <p>Catalyst team and Mentors provide expertise
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="support-block">
+                        <img src="./assets/images/check-list.png" alt="Planning">
+                        <!-- <span class="icon-strategic-planning icon"></span> -->
+                        <h3 class="title">Strategic Planning</h3>
+                        <p>Market readiness, Product development, ROI strategy
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="support-block">
+                        <img src="./assets/images/location.png" alt="Office">
+                        <!-- <span class="icon-human-resources icon"></span> -->
+                        <h3 class="title">Office and Lab Space</h3>
+                        <p>Tailored infrasructure for startup requirements
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="support-block">
+                        <img src="./assets/images/auction.png" alt="Legal">
+                        <!-- <span class="icon-legal-affairs icon"></span> -->
+                        <h3 class="title">Legal Affairs & Human Resources</h3>
+                        <p>NDAs, MOU, SHA, Franchise agreement etc. review and advice, Organisational Chart Planning,
+                            Job description creation
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="support-block">
+                        <img src="./assets/images/email-marketing.png" alt="Marketing">
+                        <!-- <span class="icon-marketing icon"></span> -->
+                        <h3 class="title">Marketing and Public Relations</h3>
+                        <p>Through social media channels, exhibitions/events and articles
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="support-block">
+
+                        <!-- <span class="icon-web-design icon"></span> -->
+                         <img src="./assets/images/deal.png" alt="Collaboration">
+                        <h3 class="title">Collaboration</h3>
+                        <p>Networking with similar accelerators and incubators locally and internationally
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="what-we-offer">
+        <h2 class="section-title text-center">Roadmap to Success</h2>
+        <div class="tab-content wrapper">
+            <div id="mentor" class="tab-pane fade in show active">
+                <div class="image-block">
+                    <div class="image-wrapper">
+                        <img data-src="./assets/images/what-we-offer.jpg" alt="What we offer" class="img-fluid lazy" />
+                    </div>
+                </div>
+                <div class="content-block">
+                    <ul class="nav nav-tabs offer-links">
+                        <li class="active">
+                            <a data-toggle="tab" href="#mentor">SUSTAINABLE ACCELERATOR</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#support">UAE VISION</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#training">SOCIAL IMPACT</a>
+                        </li>
+                    </ul>
+                    <ul class="offer-list">
+                        <li>Develop a world leading clean technology accelerator focused on sustainable growth
+                        </li>
+                    </ul>
+                    <div class="detail-link">
+                        <a href="#">About Us </a>
+                    </div>
+                </div>
+            </div>
+            <div id="support" class="tab-pane fade">
+                <div class="image-block">
+                    <div class="image-wrapper">
+                        <img data-src="./assets/images/what-we-offer.jpg" alt="What we offer" class="img-fluid lazy" />
+                    </div>
+                </div>
+                <div class="content-block">
+                    <ul class="nav nav-tabs offer-links">
+                        <li>
+                            <a data-toggle="tab" href="#mentor">SUSTAINABLE ACCELERATOR</a>
+                        </li>
+                        <li class="active">
+                            <a data-toggle="tab" href="#support">UAE VISION</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#training">SOCIAL IMPACT</a>
+                        </li>
+                    </ul>
+                    <ul class="offer-list">
+                        <li>• Promote innovation & entrepreneurship within UAE followed by world.</li>
+                        <li>• Develop human capital through comprehensive training and mentorship</li>
+                    </ul>
+                    <div class="detail-link">
+                        <a href="#">About Us </a>
+                    </div>
+                </div>
+            </div>
+            <div id="training" class="tab-pane fade">
+                <div class="image-block">
+                    <div class="image-wrapper">
+                        <img data-src="./assets/images/what-we-offer.jpg" alt="What we offer" class="img-fluid lazy" />
+                    </div>
+                </div>
+                <div class="content-block">
+                    <ul class="nav nav-tabs offer-links">
+                        <li>
+                            <a data-toggle="tab" href="#mentor">SUSTAINABLE ACCELERATOR</a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#support">UAE VISION</a>
+                        </li>
+                        <li class="active">
+                            <a data-toggle="tab" href="#training">SOCIAL IMPACT</a>
+                        </li>
+                    </ul>
+                    <ul class="offer-list">
+                        <li>Generate social impact through local research & development
+                        </li>
+                    </ul>
+                    <div class="detail-link">
+                        <a href="#">About Us </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="explore-catalyzers">
+        <h2 class="section-title text-center">Explore our Catalyzers</h2>
+        <div class="swiper catalyzers-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://www.hydro-art-pod.com/" title="" target="_blank" rel="noopener">
+                        <img src="./assets/images/HydroArtPod.png" class="swiper-lazy" alt="Hydro" width="94"
+                            height="100" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.circabio.tech/" title="" target="_blank" rel="noopener">
+                        <img src="./assets/images/CB.png" class="swiper-lazy" alt="CB" width="160" height="100" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.keytechnologies.ae/" title="" target="_blank" rel="noopener">
+                        <img src="./assets/images/KeyTech.png" class="swiper-lazy" alt="KeyTech" width="237"
+                            height="100" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://qsmonitor.com/" title="" target="_blank" rel="noopener">
+                        <img src="./assets/images/QS.png" class="swiper-lazy" alt="QS" width="213" height="100" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://volts.ae/" title="" target="_blank" rel="noopener">
+                        <img src="./assets/images/Volts.png" class="swiper-lazy" alt="Volts" width="195" height="100" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://seramic.eco/materials/" title="" target="_blank" rel="noopener">
+                        <img src="./assets/images/seramic.png" class="swiper-lazy" alt="Seramic" width="200"
+                            height="100" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.delarta.com/" title="" target="_blank" rel="noopener">
+                        <img src="./assets/images/Delarta.png" class="swiper-lazy" alt="Delarta" width="169"
+                            height="100" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://solvatechnologies.com/" title="" target="_blank" rel="noopener">
+                        <img src="./assets/images/Solva.png" class="swiper-lazy" alt="Solva" width="74" height="100" />
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="detail-link text-center">
+            <a href="#">View All</a>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2 class="section-title text-center">Catalyst Testimonials</h2>
+        <div class="container">
+            <div class="swiper testimonials-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-block">
+                            <p class="description">
+                                <span class="icon-quote-mark"></span>
+                                Catalyst was the first to believe in our project at a very early stage and has provided
+                                us with a facility where we were able to set our R&D operations and our Proof of
+                                Concept. Being part of the Catalyst Accelerator Program has allowed us to evolve in a
+                                stimulating environment surrounded by like-minded entrepreneurs.
+                            </p>
+                            <div class="profile">
+                                <div class="profile-pic">
+                                    <img src="./assets/images/HaythemRiahi.png" class="img-fluid swiper-lazy" alt=""
+                                        width="54" height="54" />
+                                </div>
+                                <div class="personal-info">
+                                    <h4>Dr. Haythem Riahi</h4>
+                                    <label>CEO and Co-Founder, Circa Biotech</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-block">
+                            <p class="description">
+                                <span class="icon-quote-mark"></span>
+                                Our network has grown from 52 laboratories in 19 countries to 392 laboratories in 72
+                                countries after our engagement with The Catalyst. QS Monitor has improved its online
+                                platform, added new features, and revamped its website. We have implemented a social
+                                media plan and activated our social media platforms
+                                We have developed projects with B2B and B2C food trading and delivery platforms within
+                                UAE. We have won Food Tech Challenge by the Ministry of Water and Food Security and
+                                Tamkeen.
+                            </p>
+                            <div class="profile">
+                                <div class="profile-pic">
+                                    <img src="./assets/images/BurakKarapinard.png" class="img-fluid swiper-lazy" alt=""
+                                        width="54" height="53" />
+                                </div>
+                                <div class="personal-info">
+                                    <h4>Burak Karapinar</h4>
+                                    <label>Founder and Managing Director, QS Monitor</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-block">
+                            <p class="description">
+                                <span class="icon-quote-mark"></span>
+                                Working with the Catalyst makes us easier to find new partners, participate in useful
+                                events and exhibitions which increase professional skill level and contribute to the
+                                development of the company holistically.
+                            </p>
+                            <div class="profile">
+                                <div class="profile-pic">
+                                    <img src="./assets/images/AleksandrKiianitsa.png" class="img-fluid swiper-lazy"
+                                        alt="" width="54" height="54" />
+                                </div>
+                                <div class="personal-info">
+                                    <h4>Aleksandr Kiianitsa</h4>
+                                    <label>CEO &amp; Co-Founder, VOLTS UAE</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next white"></div>
+                <div class="swiper-button-prev white"></div>
+            </div>
+        </div>
+        <div class="detail-link text-center white">
+            <a href="#">View All</a>
+        </div>
+    </section>
+    <section class="social-media">
+        <div class="container">
+            <h2 class="section-title text-center">Catalyst in Social Media</h2>
+            <div class="row" style="justify-content:center">
+                <div class="col-md-4 col-sm-6">
+                    <div class="media-block">
+                        <div class="block-header instagram">
+                            <img src="./assets/images/instagram.png" alt="instagram" style="width: 40px; height: 40px;">
+                            <!-- <h3 class="title"></h3> -->
+                        </div>
+                        <div class="block-content instagram">
+                            <div class="picture">
+                                <a href="https://www.instagram.com/catalystuae/" target="_blank" rel="noopener">
+                                    <img src="../Assets/Catalyst/images/catalyst-preload-image.html"
+                                        data-src="https://scontent.cdninstagram.com/v/t51.29350-15/235956465_350417716581390_8117064610970062096_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=3CoPeb0Oz2UAX_SrHg-&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-nVBbV1yrfxo5ewy4C4sXZ5JTR-2l2_53N1-h8VCg36g&amp;oe=632E7F86"
+                                        alt="insta" class="img-fluid lazy" style="width: 100%; height: 100%;">
+                                </a>
+                            </div>
+                            <div class="picture">
+                                <a href="https://www.instagram.com/catalystuae/" target="_blank" rel="noopener">
+                                    <img src="../Assets/Catalyst/images/catalyst-preload-image.html"
+                                        data-src="https://scontent.cdninstagram.com/v/t51.29350-15/292291808_1240774153324459_4216236392412240008_n.webp?stp=dst-jpg&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=ts-ipIOejIsAX_ha6ln&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-823CiEpbZq9ae8vhkl8yn-Z9nYXFAJ5EwXR448utNRw&amp;oe=632F2EE9"
+                                        alt="insta" class="img-fluid lazy" style="width: 100%; height: 100%;">
+                                </a>
+                            </div>
+                            <div class="picture">
+                                <a href="https://www.instagram.com/catalystuae/" target="_blank" rel="noopener">
+                                    <img src="../Assets/Catalyst/images/catalyst-preload-image.html"
+                                        data-src="https://scontent.cdninstagram.com/v/t51.29350-15/275369731_385975026260199_2154990997518879820_n.webp?stp=dst-jpg&amp;_nc_cat=103&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=NALQMVYBnuwAX-iHEfs&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT85RWvcULAQxyqtHb74KhkQbA0KuS2ncHVX3KOvBJ3ZGg&amp;oe=632EBECC"
+                                        alt="insta" class="img-fluid lazy" style="width: 100%; height: 100%;">
+                                </a>
+                            </div>
+                            <div class="picture">
+                                <a href="https://www.instagram.com/catalystuae/" target="_blank" rel="noopener">
+                                    <img src="../Assets/Catalyst/images/catalyst-preload-image.html"
+                                        data-src="https://scontent.cdninstagram.com/v/t51.29350-15/222559951_415034129802085_6006480742816349363_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=bfe50weRALIAX_sOjcF&amp;_nc_ht=scontent.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT-6UFc0GoT6gk7kbJA7lbm1RNgpD7QTn9LbVz8rHHzIGg&amp;oe=632F1B94"
+                                        alt="insta" class="img-fluid lazy" style="width: 100%; height: 100%;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="media-block">
+                        <div class="block-header twitter home__page__twitte__icon">
+                            <!-- <span class="icon-twitter icon">
+                                <span class="path1"></span><span class="path2"></span>
+                            </span> -->
+                            <img src="./assets/images/twitter.png" alt="twitter">
+                            <h3 class="title">Twitter</h3>
+                        </div>
+                        <div class="block-content twitter">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background">
+            <div class="box"></div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="./assets/images/catalyst-footer-logo.png" class="img-fluid" alt="catalyst"
+                        width="183" height="120" /></a>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row links-row-top">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a href="#">
+                                        HOME
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            About Us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a>
+                                        CATALYZERS
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            Our Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Our Startups
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Who Can Apply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            FAQs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a href="#">
+                                        MEDIA
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            Events
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul class="footer-links dark">
+                                <li class="group-label">
+                                    <a href="#">
+                                        CONTACT US
+                                    </a>
+                                </li>
+                                <li class="group-label">
+                                    <a href="#">
+                                        JOIN US
+                                    </a>
+                                </li>
+                                <li class="group-label">
+                                    <a href="#">
+                                        SITE MAP
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-links footer-right">
+                        <div class="group-label">Newsletter Subscription</div>
+                        <div class="contact">
+                            <p>Please submit your email to stay up to date with our news.</p>
+                            <div class="form">
+                                <input type="checkbox" checked="checked" class="custom-control-input"
+                                    id="cbNewsletterAgree" style="display:none">
+                                <input type="email" name="email" id="txtEmailNewsletterSub" placeholder="Email address">
+                                <a style="cursor:pointer" id="save-email">Sign up</a>
+                            </div>
+                            <p id="newsletter-invalid-email-message" class="msg error" style="display:none;">Please
+                                enter valid email</p>
+                            <p id="newsletter-email-exist" class="msg error" style="display:none;">Email Address Already
+                                Exists</p>
+                            <p id="newsletter-fail-message" class="msg error" style="display:none;">Email subscription
+                                faliure, please try again later.</p>
+                            <p id="newsletter-success-message" class="msg success" style="display:none;">You have
+                                successfully subscribed to Newsletter!</p>
+                        </div>
+                        <div class="initiative">
+                            <div class="group-label">Initiative by</div>
+                            <div class="initiative-logo">
+                                <a><img src="./assets/images/bg-group-logo.png" class="bp img-fluid" alt="initiative"
+                                        width="55" height="74" /></a>
+                                <a target="_blank" rel="noopener noreferrer" href="#"><img
+                                        src="./assets/images/Masdar-City-logo.png" class="masdar img-fluid"
+                                        alt="initiative" width="3374" height="549" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom">
+                        <div class="wrapper copyright">
+                            <p>
+                                © 2024 Catalyst
+                            </p>
+                        </div>
+                        <div class="wrapper social-links">
+                            <a href="#" class="privacy-terms" style="display:none">Privacy policy</a>
+                            <a href="#" class="privacy-terms">Term of service</a>
+                            <div class="social-icons">
+                                <a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.linkedin.com/company/catalystuae/"> 
+                                    <span class="icon-linkedin-logo"></span>
+                                </a><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/catalystuae">
+                                    <span class="icon-social-network-twitter"></span>
+                                </a><a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.instagram.com/catalystuae/"> <span
+                                        class="icon-social-network-instagram"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="GoTotop"><span class="icon-up-arrow"><span class="path1"></span><span class="path2"></span></span></div>
+    <input type="hidden" id="sitekey" value="6LeHflUmAAAAAFI-_rB4YWt_q3nii1xrKAAtEBPr">
+
+    <script type="text/javascript" src="./assets/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="./assets/js/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/Swiper/6.3.5/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/catalyst-js.js"></script>
+    <script type="text/javascript" src="./assets/js/select2/4.0.13/js/select2.min.js"
+        integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>

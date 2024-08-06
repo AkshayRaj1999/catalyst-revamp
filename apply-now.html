@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="preload" href="./assets/css/swiper.bundle.css" as="style" onload="this.rel='stylesheet'">
+    <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/new-style.css">
+    <link rel="stylesheet" href="./assets/css/custom-style.css">
+    <link rel="stylesheet" href="./assets/js/Swiper/6.3.5/swiper-bundle.min.css">
+    <title>Catalyst</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="overlay"
+        style="background: #000;display: none; position: fixed;top: 0; right: 0; bottom: 0;left: 0;opacity: 0.5;z-index: 1001"
+        onclick="off()">
+        <div id="divLoading"><img style="top: 35%;left: 49%;position: fixed;z-index:5; height:60px"
+                src="./assets/images/catalyst-loader.gif" alt="Loading, please wait" />
+        </div>
+    </div>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand main" href="#" rel="noopener">
+                <img src="./assets/images/catalyst-logo.png" class="img-fluid" alt="catalyst-logo" width="183"
+                    height="120" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav naviation">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link dropdown">
+                            <a>
+                                Catalyzers
+                            </a>
+                            <i class="arrow down"></i>
+                        </span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Our Services
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Our Startups
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Who Can Apply
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        FAQ
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link dropdown">
+                            <a href="#">
+                                Media
+                            </a>
+                            <i class="arrow down"></i>
+                        </span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Events
+                                        <i class="arrow right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <ul>
+                    <li>
+                        <a class="btn btn-primary apply-btn" href="#">Apply Now</a>
+                    </li>
+                    <li class="search-wrapper">
+                        <span class="icon-search" id="search-box-icon"></span>
+                        <input class="form-control" type="search" id="search-box-query" placeholder="Search"
+                            aria-label="Search">
+                    </li>
+                    <li>
+                        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="inner-page contact-us-page">
+
+
+
+        <div class="inner-banner">
+            <div class="container">
+
+
+
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="/en/">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="/en/apply-now">Apply Now</a>
+                    </li>
+                </ul>
+
+
+                <h2 class="inner-page-title">Apply Now</h2>
+                <p class="page-description">
+                    Catalyst accepts applications from local and international entrepreneurs with startup projects in
+                    the fields of aggrotech, biotech, electric mobility, energy efficiency systems, and food waste
+                    management systems. We support ideas with startup value that are innovative, potentially patentable,
+                    and focused on delivering sustainable solutions to today’s most pressing challenges.
+                </p>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="container top">
+                <div class="row top border-bottom-arrow">
+                    <div class="col-12">
+                        <div class="apply-now-form contact-form">
+                            <h1 class="error pb-5 pt-0" style="display:none" id="submissionerror">Please resolve all the
+                                errors before submitting.</h1>
+                            <form action="/apply-now" autocomplete="off" enctype="multipart/form-data"
+                                id="apply-now-form" method="post">
+                                <div class="form-block">
+                                    <div class="block-title">
+                                        <h3 class="mb-0">BRIEF</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">
+                                                        What is the name of your startup?
+                                                    </label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" id="CompanyName" name="CompanyName"
+                                                        class="form-control" maxlength="200"
+                                                        placeholder="Enter name of your startup">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Describe your startup in just
+                                                        one sentence?</label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" id="DescribeIdea" name="DescribeIdea"
+                                                        class="form-control" maxlength="200" placeholder="Describe">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">
+                                                        Company Website URL (If you have one)
+                                                    </label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="url" id="CompanyWebsite" name="CompanyWebsite"
+                                                        class="form-control validate" maxlength="200"
+                                                        placeholder="e.g www.website.com">
+                                                    <p class="error" id="CompanyWebsiteURL" style="display:none;">Please
+                                                        enter valid URL e.g. http://www.companyname.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">If you have an online demo,
+                                                        please also provide the URL</label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="url" id="OnlineDemo" name="OnlineDemo"
+                                                        class="form-control validate" maxlength="200"
+                                                        placeholder="Enter URL">
+                                                    <p class="error" id="OnlineDemoURL" style="display:none;">Please
+                                                        enter valid URL e.g. http://www.demourl.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-block">
+                                    <div class="block-title">
+                                        <h3 class="mb-0">ENVIRONMENTAL PROBLEM &amp; SOLUTION</h3>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">
+                                                        What is the specific environmental problem you are aiming to
+                                                        tackle? If possible, please try to quantify the scale of the
+                                                        specific environmental problem <span class="required">*</span>
+                                                    </label>
+                                                </div>
+                                                <div class="input-text">
+
+
+                                                    <p class="error" style="display:none;">Please enter in detail</p>
+                                                    <textarea class="form-control validate required"
+                                                        name="EnvironmentProblems" id="EnvironmentProblems"
+                                                        maxlength="1000" style="width: 100%" placeholder="Enter details"
+                                                        autofocus=""></textarea>
+                                                    <div class="count d-flex flex-wrap justify-content-between">
+                                                        <div class="count-char d-flex">
+                                                            <span class="current_count">0</span>
+                                                            <span class="maximum_count"></span>
+                                                        </div>
+                                                        <div class="count-text"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Your solution. Please describe
+                                                        how your solution is addressing the (quantified) environmental
+                                                        problem you described above<span
+                                                            class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+
+                                                    <p class="error" style="display:none;">Please enter in detail</p>
+                                                    <textarea class="form-control validate required" name="YourSolution"
+                                                        id="YourSolution" maxlength="1000" style="width: 100%"
+                                                        placeholder="Enter details" autofocus=""></textarea>
+                                                    <div class="count d-flex flex-wrap justify-content-between">
+                                                        <div class="count-char d-flex">
+                                                            <span class="current_count">0</span>
+                                                            <span class="maximum_count"></span>
+                                                        </div>
+                                                        <div class="count-text"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+
+
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">
+                                                        Environmental Relevance. Does your solution mitigate
+                                                        environmental problem and/or support adaptation to its effect?
+                                                        <span class="required">*</span>
+                                                    </label>
+                                                </div>
+                                                <div class="input-text">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+
+                                                            <select class="form-control selecttwo validate required"
+                                                                name="EnvironmentRelevance" id="environmentrelevance">
+                                                                <option value="" disabled selected>Select</option>
+                                                                <option value="Adaptation"> Adaptation</option>
+                                                                <option value="Mitigation"> Mitigation</option>
+                                                                <option value="Both"> Both</option>
+                                                            </select>
+
+                                                            <p class="error" id="environmentrelevanceselect"
+                                                                style="display:none;">Please select a value</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="note">
+                                                        <p>
+                                                            <strong>REMARKS:</strong><br />
+                                                            Environmental change mitigation is any action taken to
+                                                            permanently eliminate or reduce the long-term risk and
+                                                            hazards of environment change to human life, property,
+                                                            etc.
+                                                        </p>
+                                                        <p>
+                                                            Adaptation to environmental change is defined as efforts
+                                                            to respond to these changes frequently entail reducing
+                                                            vulnerability and enhancing the capacity to adapt, in
+                                                            effect, to enhance the resilience of people and places,
+                                                            localities, and ways of life.
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-block">
+                                    <div class="block-title">
+                                        <h3 class="mb-0">CORE PRODUCT TYPE</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="input-field">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">
+                                                                What type of product or services is your solution ?
+                                                            </label>
+                                                        </div>
+                                                        <div class="input-text">
+
+                                                            <select class="form-control selecttwo" name="ServiceType"
+                                                                id="servicetype">
+                                                                <option value="" disabled selected>Select</option>
+                                                                <option value="Digital"> Digital</option>
+                                                                <option value="Non-digital"> Non-digital</option>
+                                                                <option value="Both"> Both</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="note">
+                                                    <p>
+                                                        Please, consider the key value driver of your startup. <br />
+                                                        Digital would mean the core product of the startup is
+                                                        software focused. <br />
+                                                        Non-digital would mean the core product of the company is
+                                                        hardware focused or requires physical infrastructure. For
+                                                        service focused startups with non-digital core value driver,
+                                                        non-digital would be also the most appropriate selection.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">
+                                                        How much of the quantified problem can your solution tackle
+                                                    </label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" id="ProblamesTackleBySolution"
+                                                        name="ProblamesTackleBySolution" maxlength="200"
+                                                        class="form-control" placeholder="Enter details">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">
+                                                        Explain your business model. How do or will you make money with
+                                                        your solution?
+                                                    </label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" id="BusinessModel" name="BusinessModel"
+                                                        class="form-control" maxlength="200"
+                                                        placeholder="Explain your business model">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">
+                                                        Can you already put a specific number against your solution
+                                                        (i.e. carbon savings, reduction by x in specific harmful gases
+                                                        or materials, removal of x tons of specific material or dirty
+                                                        technology from cycle, reduction by x of energy consumption
+                                                        etc.)?
+                                                    </label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="number" id="SpecificNumber" name="SpecificNumber"
+                                                        class="form-control" placeholder="0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">
+                                                        What specific evidence have you collected or accessed to prove
+                                                        there is a demand for your solution?
+                                                    </label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" id="SpecificEvidence" name="Specificevidence"
+                                                        class="form-control" maxlength="200"
+                                                        placeholder="Enter details.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-block">
+                                    <div class="block-title">
+                                        <h3 class="mb-0">YOUR PROGRESS</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">
+                                                        What is the Technology Readiness Level of your solution? <span
+                                                            class="required">*</span>
+                                                    </label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <select class="form-control selecttwo validate required"
+                                                        name="ReadinessLevel" id="readnesslavel">
+                                                        <option value="" disabled selected>Select</option>
+                                                        <option value="Basic principles observed and reported"> Basic
+                                                            principles observed and reported</option>
+                                                        <option
+                                                            value="Technology concept and/or application formulated">
+                                                            Technology concept and/or application formulated</option>
+                                                        <option
+                                                            value="Analytical and experimental critical function and/or characteristic proof of concept">
+                                                            Analytical and experimental critical function and/or
+                                                            characteristic proof of concept</option>
+                                                        <option value="Technology validation in laboratory environment">
+                                                            Technology validation in laboratory environment</option>
+                                                        <option value="Technology validated in relevant environment">
+                                                            Technology validated in relevant environment</option>
+                                                        <option value="Technology demonstrated in relevant environment">
+                                                            Technology demonstrated in relevant environment</option>
+                                                        <option
+                                                            value="System prototype demonstration in operational environment">
+                                                            System prototype demonstration in operational environment
+                                                        </option>
+                                                        <option
+                                                            value="Actual system completed and qualified through test and demonstration">
+                                                            Actual system completed and qualified through test and
+                                                            demonstration</option>
+                                                        <option value="Actual system proven in operational environment">
+                                                            Actual system proven in operational environment</option>
+                                                    </select>
+
+                                                    <p class="error" id="readnesslavelselect" style="display:none;">
+                                                        Please select a value</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Which of the following best
+                                                        describes the current status of your venture? <span
+                                                            class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <select class="form-control selecttwo validate required"
+                                                        name="CurrentStatus" id="currentstatus">
+                                                        <option value="" disabled selected>Select</option>
+                                                        <option value="Ideation stage - nothing developed yet"> Ideation
+                                                            stage - nothing developed yet</option>
+                                                        <option value="Sketches/ Mocks/ Renderings"> Sketches/ Mocks/
+                                                            Renderings</option>
+                                                        <option value="Prototype"> Prototype</option>
+                                                        <option value="Private Beta/ Demonstrator"> Private Beta/
+                                                            Demonstrator</option>
+                                                        <option value="Public Beta/ Demonstrator"> Public Beta/
+                                                            Demonstrator</option>
+                                                        <option value="Taking preorders"> Taking preorders</option>
+                                                        <option value="Launched - Generating revenue"> Launched -
+                                                            Generating revenue</option>
+                                                    </select>
+
+                                                    <p class="error" id="currentstatusselect" style="display:none;">
+                                                        Please select a value</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">What kind of support have you
+                                                        already received to bring your company to life? <span
+                                                            class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+
+                                                    <p class="error" style="display:none;">Please enter in detail</p>
+                                                    <textarea class="form-control validate required" id="KindOfSupport"
+                                                        name="KindOfSupport" maxlength="800" style="width: 100%"
+                                                        placeholder="Enter details" autofocus=""></textarea>
+                                                    <div class="count d-flex flex-wrap justify-content-between">
+                                                        <div class="count-char d-flex">
+                                                            <span class="current_count">0</span>
+                                                            <span class="maximum_count"></span>
+                                                        </div>
+                                                        <div class="count-text"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="note">
+                                                    <p><span class="required">*</span> This might include investments,
+                                                        public grants, other types of financial support, participation
+                                                        or commitment to participate in an incubator, accelerator or
+                                                        pre-accelerator programme, training programmes, etc. Please make
+                                                        specific reference to the support received via these programmes.
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">What is your plan if you are
+                                                        accepted in the programme?<span
+                                                            class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" class="form-control validate required"
+                                                        id="YourPlan" maxlength="200" name="YourPlan"
+                                                        placeholder="Enter details">
+
+                                                    <p class="error" style="display:none;">Please enter in detail</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Please upload a max 6 page
+                                                        slide deck (PDF) summarizing your business plan and
+                                                        roadmap</label>
+                                                    <p id="pdfFile" class="error" style="display:none;">File is too big
+                                                    </p>
+                                                </div>
+                                                <div class="input-text">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <img src="./assets/images/apply-now/file-input.png"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input form-control"
+                                                                id="businessPlannPDF" name="PDFFile"
+                                                                aria-describedby="inputGroupFileAddon01" accept=".pdf">
+                                                            <label class="custom-file-label" for="inputGroupFile01">File
+                                                                Name</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Please upload your video Pitch
+                                                        up to &nbsp;<strong>5mb</strong> max.</label>
+                                                    <p id="videoFile" class="error" style="display:none;">File is too
+                                                        big</p>
+                                                </div>
+                                                <div class="input-text">
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+                                                            <img src="./assets/images/apply-now/file-input.png"
+                                                                class="img-fluid">
+                                                        </div>
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input"
+                                                                name="VideoFile" id="onlineDemoVideo"
+                                                                aria-describedby="inputGroupFileAddon02"
+                                                                accept="video/*">
+                                                            <label class="custom-file-label" for="inputGroupFile02">File
+                                                                Name</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-block">
+                                    <div class="block-title">
+                                        <h3 class="mb-0">YOUR MARKET &amp; THE COMPETITION</h3>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">In which market sector are you
+                                                        (Cleantech)?</label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <select class="form-control selecttwo" name="MarketSector"
+                                                        id="marketsector">
+                                                        <option value="0" disabled selected>Select</option>
+                                                        <option value="Agriculture"> Agriculture</option>
+                                                        <option value="Air &amp; Environment"> Air &amp; Environment
+                                                        </option>
+                                                        <option value="Clean Energy"> Clean Energy</option>
+                                                        <option value="Clean Industry"> Clean Industry</option>
+                                                        <option value="Efficiency"> Efficiency</option>
+                                                        <option value="Energy Storage"> Energy Storage</option>
+                                                        <option value="Transportation"> Transportation</option>
+                                                        <option value="Water"> Water</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Cleantech sub-sector:</label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <select class="form-control selecttwo" name="SubSector"
+                                                        id="subsector">
+                                                        <option value="0" disabled selected>Select</option>
+                                                        <option value="Advanced packaging"> Advanced packaging</option>
+                                                        <option value="Animal farming"> Animal farming</option>
+                                                        <option value="Aquaculture"> Aquaculture</option>
+                                                        <option value="Batteries"> Batteries</option>
+                                                        <option value="Biomass"> Biomass</option>
+                                                        <option value="Bioremediation"> Bioremediation</option>
+                                                        <option value="Carbon sequestration"> Carbon sequestration
+                                                        </option>
+                                                        <option value="Carbon trading/ offsets"> Carbon trading/ offsets
+                                                        </option>
+                                                        <option value="Cogeneration"> Cogeneration</option>
+                                                        <option value="Collaborative consumption systems"> Collaborative
+                                                            consumption systems</option>
+                                                        <option value="Controlled environment agriculture"> Controlled
+                                                            environment agriculture</option>
+                                                        <option value="Crop farming"> Crop farming</option>
+                                                        <option value="Data centers &amp; devices"> Data centers &amp;
+                                                            devices</option>
+                                                        <option value="Design innovation"> Design innovation</option>
+                                                        <option value="Efficiency"> Efficiency</option>
+                                                        <option value="Emerging"> Emerging</option>
+                                                        <option value="Emissions control"> Emissions control</option>
+                                                        <option value="Equipment innovation"> Equipment innovation
+                                                        </option>
+                                                        <option value="Fuel cells"> Fuel cells</option>
+                                                        <option value="Fueling/ charging infrastructure"> Fueling/
+                                                            charging infrastructure</option>
+                                                        <option value="Geothermal"> Geothermal</option>
+                                                        <option value="Green building"> Green building</option>
+                                                        <option value="Hydrogen storage"> Hydrogen storage</option>
+                                                        <option value="Marine"> Marine</option>
+                                                        <option value="Materials innovation"> Materials innovation
+                                                        </option>
+                                                        <option value="Measurement &amp; analytics"> Measurement &amp;
+                                                            analytics</option>
+                                                        <option value="Mechanical storage"> Mechanical storage</option>
+                                                        <option value="Monitoring &amp; compliance"> Monitoring &amp;
+                                                            compliance</option>
+                                                        <option value="Nuclear"> Nuclear</option>
+                                                        <option value="Production"> Production</option>
+                                                        <option value="Recycling &amp; waste"> Recycling &amp; waste
+                                                        </option>
+                                                        <option value="Renewable fuels"> Renewable fuels</option>
+                                                        <option value="Semiconductors"> Semiconductors</option>
+                                                        <option value="Smart grid"> Smart grid</option>
+                                                        <option value="Solar"> Solar</option>
+                                                        <option value="Super/ ultra-capacitators"> Super/
+                                                            ultra-capacitators</option>
+                                                        <option value="Sustainable forestry"> Sustainable forestry
+                                                        </option>
+                                                        <option value="Thermal storage"> Thermal storage</option>
+                                                        <option value="Traffic management"> Traffic management</option>
+                                                        <option value="Transmission"> Transmission</option>
+                                                        <option value="Treatment"> Treatment</option>
+                                                        <option value="Vehicles"> Vehicles</option>
+                                                        <option value="Waste-to-energy"> Waste-to-energy</option>
+                                                        <option value="Wind"> Wind</option>
+                                                        <option value="Not Assigned/ Unknown"> Not Assigned/ Unknown
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">What and how large is your
+                                                        target market? Please explain briefly how you have identified
+                                                        it<span class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" class="form-control validate required"
+                                                        id="TargetMaket" maxlength="200" name="TargetMaket"
+                                                        placeholder="Enter details">
+
+                                                    <p class="error" style="display:none;">Please enter in detail</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Who are your competitors and /
+                                                        or who might become competitors? Who is your biggest threat?
+                                                        <span class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" class="form-control validate required"
+                                                        id="Competitors" maxlength="200" name="Competitors"
+                                                        placeholder="Enter details">
+
+                                                    <p class="error" style="display:none;">Please enter in detail</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-block">
+                                    <div class="block-title">
+                                        <h3 class="mb-0">YOUR TEAM</h3>
+                                    </div>
+                                    <div class="row">
+
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Founders Dream (i.e. not so
+                                                        much a mission statement, but your team’s motivation in this
+                                                        venture.</label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" class="form-control" id="FoundersDream"
+                                                        maxlength="200" name="FoundersDream"
+                                                        placeholder="Enter details">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Why is your team the right one
+                                                        to bring your idea to market success? What is your expertise in
+                                                        this domain?</label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" class="form-control" id="Expertise"
+                                                        name="Expertise" maxlength="200" placeholder="Enter details">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="form-block">
+                                    <div class="block-title">
+                                        <h3 class="mb-0">FOUNDERS</h3>
+                                    </div>
+
+                                    <div class="note">
+                                        <p><span class="required">*</span>Please list all founders (active and
+                                            non-active) in your venture according to the specifications below:</p>
+                                        <p>
+                                            (1) Level of commitment: time commitment to the startup in percentage. E.g.
+                                            100% = 1 FTE i.e. 40h/week, 50% = 0.5 FTE i.e. 20h/ week,, etc.<br />
+                                            (2) Active founders should have a large majority share with a reasonably
+                                            equal distribution.
+                                        </p>
+                                    </div>
+
+                                    <div class="fonders-row">
+                                        <input type="hidden" id="indexvalue" value="0" />
+                                        <div class="fonders-block">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="input-field">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">First Name <span
+                                                                    class="required">*</span></label>
+                                                        </div>
+                                                        <div class="input-text">
+
+                                                            <input type="text" class="form-control validate required"
+                                                                id="firstname0" maxlength="200"
+                                                                placeholder="Enter first name">
+
+                                                            <p class="error" style="display:none;">Please enter first
+                                                                name</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="input-field">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">Last Name <span
+                                                                    class="required">*</span></label>
+                                                        </div>
+                                                        <div class="input-text">
+
+                                                            <input type="text" class="form-control validate required"
+                                                                id="lastname0" maxlength="200"
+                                                                placeholder="Enter last name">
+                                                            <p class="error" style="display:none;">Please enter last
+                                                                name</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-field">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">Role/ Responsibility
+                                                                <span class="required">*</span></label>
+                                                        </div>
+                                                        <div class="input-text">
+
+                                                            <input type="text" class="form-control validate required"
+                                                                id="role0" maxlength="200"
+                                                                placeholder="Enter your role">
+                                                            <p class="error" style="display:none;">Please enter in
+                                                                detail</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-field">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">Email <span
+                                                                    class="required">*</span></label>
+                                                        </div>
+                                                        <div class="input-text">
+
+                                                            <input type="email" class="form-control validate required"
+                                                                id="email0" maxlength="200"
+                                                                placeholder="Enter your email">
+                                                            <p class="error" style="display:none;">Please enter email
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-field">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">Country<span
+                                                                    class="required">*</span></label>
+                                                        </div>
+                                                        <div class="input-text">
+
+                                                            <input type="text" class="form-control validate required"
+                                                                id="country0" maxlength="100"
+                                                                placeholder="Enter your country">
+                                                            <p class="error" style="display:none;">Please enter country
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-field">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">City <span
+                                                                    class="required">*</span></label>
+                                                        </div>
+                                                        <div class="input-text">
+
+                                                            <input type="text" class="form-control validate required"
+                                                                id="city0" maxlength="100" placeholder="Enter your city"
+                                                                required>
+                                                            <p class="error" style="display:none;">Please enter city</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-field">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">Professional profile
+                                                                URL (e.g. LinkedIn)<span
+                                                                    class="required">*</span></label>
+                                                        </div>
+                                                        <div class="input-text">
+
+                                                            <input type="url" class="form-control validate required"
+                                                                id="profileurl0" maxlength="200"
+                                                                placeholder="Enter your profile URL">
+                                                            <p class="error" style="display:none;">Please enter
+                                                                professional profile URL</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-field">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">Gender <span
+                                                                    class="required">*</span></label>
+                                                        </div>
+                                                        <div class="input-text">
+
+                                                            <select class="form-control selecttwo validate required"
+                                                                name="Gender" id="gender0">
+                                                                <option value="0" disabled selected>Select</option>
+                                                                <option value="Male"> Male</option>
+                                                                <option value="Female"> Female</option>
+                                                                <option value="Others"> Others</option>
+                                                                <option value="Not Disclosed"> Not Disclosed</option>
+                                                            </select>
+                                                            <p class="error" id="gender0select" style="display:none;">
+                                                                Please enter gender</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-field">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">Level of
+                                                                commitment<span class="required">*</span></label>
+                                                        </div>
+                                                        <div class="input-text">
+
+                                                            <input type="text" class="form-control validate required"
+                                                                id="commitmentlevel0" maxlength="200"
+                                                                placeholder="Enter your level of commitment">
+                                                            <p class="error" style="display:none;">Please enter level of
+                                                                commitment</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-field">
+                                                        <div class="input-label">
+                                                            <label for="name" class="input-label">Will you be the
+                                                                primary contact to Catalyst? </label>
+                                                        </div>
+                                                        <div class="input-text">
+
+
+                                                            <select class="form-control selecttwo" name="PrimaryContact"
+                                                                id="primarycontact0">
+                                                                <option value="No" disabled selected>Select</option>
+                                                                <option value="Yes"> Yes</option>
+                                                                <option value="No"> No</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="add-remove-item d-flex flex-wrap">
+                                        <button class="btn-add add-item">Add Item +</button>
+                                        <button class="btn-add remove-item">Remove Item -</button>
+                                    </div>
+                                </div>
+                                <div class="form-block flex-none">
+                                    <div class="block-title">
+                                        <h3 class="mb-0">INVESTORS</h3>
+                                    </div>
+                                    <div class="row">
+
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Do you have any investors in
+                                                        your company?<span class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <select class="form-control selecttwo validate required"
+                                                        name="Investors" id="investors">
+                                                        <option value="" disabled selected>Select</option>
+                                                        <option value="Yes"> Yes</option>
+                                                        <option value="No"> No</option>
+                                                    </select>
+
+                                                    <p class="error" id="investorsselect" style="display:none;">Please
+                                                        select a value</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Do you have any other key
+                                                        members in your venture?<span class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <select class="form-control selecttwo validate required"
+                                                        name="KeyMembers" id="keymembers">
+                                                        <option value="" disabled selected>Select</option>
+                                                        <option value="Yes"> Yes</option>
+                                                        <option value="No"> No</option>
+                                                    </select>
+
+                                                    <p class="error" id="keymembersselect" style="display:none;">Please
+                                                        select a value</p>
+                                                    <div class="remark">Please list other key members in your venture:
+                                                        key employees, board members, mentors, etc.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-block">
+                                    <div class="block-title">
+                                        <h3 class="mb-0">COMPANY STRUCTURE</h3>
+                                    </div>
+                                    <div class="row">
+
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">What is your legal
+                                                        entity?<span class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <select class="form-control selecttwo validate required"
+                                                        name="LegalEntity" id="legalentity">
+                                                        <option value="" disabled selected>Select</option>
+                                                        <option value="Sole proprietorship"> Sole proprietorship
+                                                        </option>
+                                                        <option value="Civil Company"> Civil Company</option>
+                                                        <option value="Limited Liability Company (LLC)"> Limited
+                                                            Liability Company (LLC)</option>
+                                                        <option value="Partnership"> Partnership</option>
+                                                        <option value="Private Share Holding Company"> Private Share
+                                                            Holding Company</option>
+                                                        <option value="Public Share Holding Company"> Public Share
+                                                            Holding Company</option>
+                                                        <option
+                                                            value="Branch of Foreign Companies/Representative Office">
+                                                            Branch of Foreign Companies/Representative Office</option>
+                                                        <option value="Branch of GCC companies"> Branch of GCC companies
+                                                        </option>
+                                                        <option value="Branch of Free Zone Company"> Branch of Free Zone
+                                                            Company</option>
+                                                        <option value="Branch of Dubai based companies"> Branch of Dubai
+                                                            based companies</option>
+                                                        <option value="Branch of UAE based companies"> Branch of UAE
+                                                            based companies</option>
+                                                    </select>
+
+                                                    <p class="error" id="legalentityselect" style="display:none;">Please
+                                                        select a value</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Please provide any other
+                                                        relevant information about the structure or formation of the
+                                                        startup </label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <input type="text" id="relevantinfo" name="RelevantInfo"
+                                                        class="form-control" maxlength="200"
+                                                        placeholder="Provide details">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">What IP protection have you
+                                                        secured or are you planning to secure for your solution?<span
+                                                            class="required">*</span></label>
+                                                    <span class="d-block">Property rights: all intellectual property
+                                                        rights (IP), licenses and domains should be owned by the
+                                                        company.</span>
+                                                </div>
+                                                <div class="input-text">
+
+
+                                                    <p class="error" style="display:none;">Please enter in detail</p>
+                                                    <textarea class="form-control validate required" id="ipprotection"
+                                                        name="IPProtection" maxlength="800" style="width: 100%"
+                                                        placeholder="Enter details" autofocus=""></textarea>
+                                                    <div class="count d-flex flex-wrap justify-content-between">
+                                                        <div class="count-char d-flex">
+                                                            <span class="current_count">0</span>
+                                                            <span class="maximum_count"></span>
+                                                        </div>
+                                                        <div class="count-text"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="form-block">
+                                    <div class="block-title">
+                                        <h3 class="mb-0">CLOSING</h3>
+                                    </div>
+                                    <div class="row">
+
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">Have you participated in any
+                                                        other programme before?<span class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <select class="form-control selecttwo validate required"
+                                                        name="ProgramParticipation" id="programparticipation">
+                                                        <option value="" disabled selected>Select</option>
+                                                        <option value="Yes"> Yes</option>
+                                                        <option value="No"> No</option>
+                                                    </select>
+
+                                                    <p class="error" id="programparticipationselect"
+                                                        style="display:none;">Please select a value</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="input-field">
+                                                <div class="input-label">
+                                                    <label for="name" class="input-label">How did you learn about The
+                                                        Catalyst Accelerator?<span class="required">*</span></label>
+                                                </div>
+                                                <div class="input-text">
+
+                                                    <select class="form-control selecttwo validate required"
+                                                        name="Reference" id="reference">
+                                                        <option value="" disabled selected>Select</option>
+                                                        <option value="Referral by Person"> Referral by Person</option>
+                                                        <option value="Referral by other startup"> Referral by other
+                                                            startup</option>
+                                                        <option
+                                                            value="Referral by a university or technology institute">
+                                                            Referral by a university or technology institute</option>
+                                                        <option value="Internet/Search"> Internet/Search</option>
+                                                        <option value="Other Website"> Other Website</option>
+                                                        <option value="Event/Visit"> Event/Visit</option>
+                                                        <option value="Facebook, Twitter, Instagram"> Facebook, Twitter,
+                                                            Instagram</option>
+                                                        <option value="Others"> Others</option>
+                                                    </select>
+
+                                                    <p class="error" id="referenceselect" style="display:none;">Please
+                                                        select a value</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <p class="error" id="privacycheck" style="display:none;">Please accept
+                                                Privacy Policy</p>
+
+                                            <div class="terms-n-conditoions d-flex flex-wrap">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" class="validate required" id="checkbox"
+                                                        name="" value="" />
+                                                    <label for="checkbox"><span></span></label>
+                                                </div>
+                                                <div class="terms-n-condition-text">
+                                                    <p><strong>I accept Catalyst Accelerator Application Terms &amp;
+                                                            Conditions and the Company's Privacy Policy</strong></p>
+                                                    <p>
+                                                        By checking this box I accept the Catalyst Accelerator
+                                                        programme's Application Terms &amp; Conditions and I give my
+                                                        consent to The Catalyst to process my personal data in
+                                                        accordance with the Company’s Privacy Policy. Where I have
+                                                        provided third parties’ personal data, the data subjects have
+                                                        consented to the provision of this personal data and the
+                                                        processing in accordance with the above mentioned Privacy
+                                                        Policy.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="submit-butto text-right">
+                                        <input id="Token" name="Token" type="hidden" value="" />
+                                        <input id="JsonCompanyFounders" name="JsonCompanyFounders" type="hidden"
+                                            value="" />
+                                        <button type="submit" class="btn btn-primary"
+                                            id="btnsubmitapplynow">Submit</button>
+                                    </div>
+                                </div>
+                                <!-- end -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="./assets/images/catalyst-footer-logo.png" class="img-fluid" alt="catalyst"
+                        width="183" height="120" /></a>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row links-row-top">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a href="#">
+                                        HOME
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            About Us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a>
+                                        CATALYZERS
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            Our Services
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Our Startups
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Who Can Apply
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            FAQs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-links">
+                                <div class="group-label">
+                                    <a href="#">
+                                        MEDIA
+                                    </a>
+                                </div>
+                                <ul class="links-group">
+                                    <li>
+                                        <a href="#">
+                                            Events
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <ul class="footer-links dark">
+                                <li class="group-label">
+                                    <a href="#">
+                                        CONTACT US
+                                    </a>
+                                </li>
+                                <li class="group-label">
+                                    <a href="#">
+                                        JOIN US
+                                    </a>
+                                </li>
+                                <li class="group-label">
+                                    <a href="#">
+                                        SITE MAP
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="footer-links footer-right">
+                        <div class="group-label">Newsletter Subscription</div>
+                        <div class="contact">
+                            <p>Please submit your email to stay up to date with our news.</p>
+                            <div class="form">
+                                <input type="checkbox" checked="checked" class="custom-control-input"
+                                    id="cbNewsletterAgree" style="display:none">
+                                <input type="email" name="email" id="txtEmailNewsletterSub" placeholder="Email address">
+                                <a style="cursor:pointer" id="save-email">Sign up</a>
+                            </div>
+                            <p id="newsletter-invalid-email-message" class="msg error" style="display:none;">Please
+                                enter valid email</p>
+                            <p id="newsletter-email-exist" class="msg error" style="display:none;">Email Address Already
+                                Exists</p>
+                            <p id="newsletter-fail-message" class="msg error" style="display:none;">Email subscription
+                                faliure, please try again later.</p>
+                            <p id="newsletter-success-message" class="msg success" style="display:none;">You have
+                                successfully subscribed to Newsletter!</p>
+                        </div>
+                        <div class="initiative">
+                            <div class="group-label">Initiative by</div>
+                            <div class="initiative-logo">
+                                <a><img src="./assets/images/bg-group-logo.png" class="bp img-fluid" alt="initiative"
+                                        width="55" height="74" /></a>
+                                <a target="_blank" rel="noopener noreferrer" href="#"><img
+                                        src="./assets/images/Masdar-City-logo.png" class="masdar img-fluid"
+                                        alt="initiative" width="3374" height="549" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom">
+                        <div class="wrapper copyright">
+                            <p>
+                                © 2024 Catalyst
+                            </p>
+                        </div>
+                        <div class="wrapper social-links">
+                            <a href="#" class="privacy-terms" style="display:none">Privacy policy</a>
+                            <a href="#" class="privacy-terms">Term of service</a>
+                            <div class="social-icons">
+                                <a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.linkedin.com/company/catalystuae/">
+                                    <span class="icon-linkedin-logo"></span>
+                                </a><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/catalystuae">
+                                    <span class="icon-social-network-twitter"></span>
+                                </a><a target="_blank" rel="noopener noreferrer"
+                                    href="https://www.instagram.com/catalystuae/"> <span
+                                        class="icon-social-network-instagram"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="GoTotop"><span class="icon-up-arrow"><span class="path1"></span><span class="path2"></span></span></div>
+    <input type="hidden" id="sitekey" value="6LeHflUmAAAAAFI-_rB4YWt_q3nii1xrKAAtEBPr">
+
+    <script type="text/javascript" src="./assets/js/popper.min.js" defer></script>
+    <script type="text/javascript" src="./assets/js/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./assets/js/Swiper/6.3.5/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/catalyst-js.js"></script>
+    <script type="text/javascript" src="./assets/js/select2/4.0.13/js/select2.min.js"
+        integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <script src="./assets/js/custom.js"></script>
+</body>
+
+</html>
