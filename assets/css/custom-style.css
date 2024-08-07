@@ -1,19 +1,58 @@
-.support-block img{
+.support-block img {
     width: 65px;
     height: 65px;
     object-fit: contain;
     margin-bottom: 3.5rem;
 }
-.home__page__twitte__icon img{
+
+.home__page__twitte__icon img {
     width: 40px;
     height: auto;
 }
-.support-content-item img{
+
+.support-content-item img {
     width: 80px;
     height: 80px;
     object-fit: contain;
     margin-bottom: 2.2rem;
 }
-.Christine__news__page__social__links{
+.who-can-apply-item-content img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 2rem;
+}
+section.banner .banner-content .about-link a .circle .icon-arrow-right {
+    font-size: 1rem;
+}
+@media (min-width: 1632px) {
+    header .navbar .right-content ul li .icon-search {
+      font-size: 3rem;
+    }
+  }
+  
+.swiper .swiper-button-next:after {
+    font-size: 4rem;
+    color: #181822;
+    font-family: "icomoon";
+    content: "\e900";
+}
 
+.swiper .swiper-button-prev:after {
+    font-size: 4rem;
+    color: #181822;
+    font-family: "icomoon";
+    content: "\e902";
+}
+.icon-mail-envelope-closed{
+    font-size: 2.4rem;
+    margin-right: 1rem;
+    color: #fff;
+}
+.icon-phone{
+    color: #fff;
+}
+.icon-twitter-square{
+    font-size: 3.1rem !important;
 }
