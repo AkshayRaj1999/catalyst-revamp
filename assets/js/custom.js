@@ -25,7 +25,7 @@ window.addEventListener('scroll', function () {
     let scroll = window.scrollY;
     if (scroll > 0 && fired === false) {
         var recaptchaScript = document.createElement('script');
-        recaptchaScript.src = '../../www.google.com/recaptcha/apif064.js?render=6LeHflUmAAAAAFI-_rB4YWt_q3nii1xrKAAtEBPr';
+        recaptchaScript.src = './assets/recaptcha/apif064.js?render=6LeHflUmAAAAAFI-_rB4YWt_q3nii1xrKAAtEBPr';
         recaptchaScript.defer = true;
         document.body.appendChild(recaptchaScript);
         fired = true;

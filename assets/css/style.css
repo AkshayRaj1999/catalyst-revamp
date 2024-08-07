@@ -69,6 +69,10 @@
   content: "\e986";
 }
 
+.icon-cheveron-up:before {
+  content: "\e906";
+}
+
 .icon-arrow-up:before {
   content: "\ea32";
 }
