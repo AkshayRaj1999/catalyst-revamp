@@ -1,3 +1,5 @@
+/** @format */
+
 !(function ($) {
   "use strict";
   function a(b, c) {
@@ -394,7 +396,7 @@ $(window).scroll(function () {
         $(this).next(".custom-file-label").html(b),
           $(this).next(".custom-file-label").css("color", "#000");
       }),
-      $(".selecttwo").select2();
+      $(".selecttwo").length > 0 && $(".selecttwo").select2();
   }),
   $(window).scroll(function () {
     sectionActive(), setTimeout(function () {}, 300);

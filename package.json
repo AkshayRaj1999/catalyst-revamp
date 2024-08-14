@@ -1,0 +1,14 @@
+{
+  "name": "catalyst-revamp",
+  "version": "1.0.0",
+  "description": "Catalyst html templates",
+  "main": "index.html",
+  "scripts": {
+    "watchscss": "node-sass assets/scss/app.scss -wo assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
