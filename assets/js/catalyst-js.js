@@ -737,19 +737,37 @@ $(document).ready(function () {
       }
     }),
     $("#faqsearch-box-query").keypress(function (a) {
-      13 == a.keyCode &&
-        (window.location.href = "/en/catalyzers/faqs?query=" + $(this).val());
-    }),
-    $("#search-box-btn").click(function () {
-      return (
-        e.preventDefault(),
-        $("#search-box-query") &&
-          "" != $("#search-box-query").val() &&
-          ($("#search-box-query").val(),
-          (window.location.href = "/en/Search?" + data)),
-        !1
-      );
-    }),
+      if (13 == a.keyCode) {
+        // Check if the Enter key is pressed
+        const searchQuery = $("#faqsearch-box-query").val().toLowerCase(); // Get the input value and convert to lowercase
+        $(".question-block").each(function () {
+          let question = $(this).find(".question").text().toLowerCase(); // Convert the question text to lowercase
+          let description = $(this).find(".description").text().toLowerCase(); // Convert the question text to lowercase
+          if (
+            question.includes(searchQuery) ||
+            description.includes(searchQuery)
+          ) {
+            // Check if the question includes the search query
+            console.log("Match found:", question); // Log matched question
+            $(this).removeClass("d-none");
+          } else {
+            $(this).addClass("d-none");
+          }
+          $(this).removeClass('active')
+        });
+      }
+    });
+
+  $("#search-box-btn").click(function () {
+    return (
+      e.preventDefault(),
+      $("#search-box-query") &&
+        "" != $("#search-box-query").val() &&
+        ($("#search-box-query").val(),
+        (window.location.href = "/en/Search?" + data)),
+      !1
+    );
+  }),
     $(".load-new-page").click(function () {
       var b = parseInt($(this).val());
       if ($("#search-box-query") && "" != $("#search-box-query").val()) {
