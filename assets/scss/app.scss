@@ -88,7 +88,8 @@
         font-size: 16px;
       }
     }
-    h4 {
+    h4,
+    h1 {
       font-size: 32px;
       line-height: 1.2;
     }
@@ -118,6 +119,46 @@
     }
   }
 }
-.inner-page .page-content .container.top::before{
+.inner-page .page-content .container.top::before {
   height: calc(100% + 80px);
+}
+.explore-catalyzers {
+  .swiper-slide {
+    a {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+.our-team strong {
+  font-weight: bold;
+}
+.initiative-logo {
+  display: flex;
+  align-items: center;
+  @media (max-width: 720px) {
+    justify-content: center;
+  }
+}
+header .navbar .right-content ul li .icon-search {
+  @media (max-width: 720px) {
+    font-size: 2.5rem;
+  }
+}
+.search-wrapper .sfContentBlock.sf-Long-text {
+  display: flex;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?6tplkc");
+  src: url("../fonts/icomoon.eot?6tplkc#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?6tplkc") format("truetype"),
+    url("../fonts/icomoon.woff?6tplkc") format("woff");
+  // url("../fonts/icomoon.svg?6tplkc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }

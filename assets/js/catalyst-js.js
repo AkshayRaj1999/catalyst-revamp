@@ -712,6 +712,11 @@ $(document).ready(function () {
       } else $("#submissionerror").show(), $("html,body").scrollTop(0);
     }),
     $("#search-box-icon").click(function (b) {
+      if ($(".search-wrapper").hasClass("active")) {
+        $(".search-wrapper").removeClass("active");
+      } else {
+        $(".search-wrapper").addClass("active");
+      }
       if (
         $(".search-wrapper").hasClass("active") &&
         "" != $("#search-box-query").val() &&
@@ -753,7 +758,7 @@ $(document).ready(function () {
           } else {
             $(this).addClass("d-none");
           }
-          $(this).removeClass('active')
+          $(this).removeClass("active");
         });
       }
     });
