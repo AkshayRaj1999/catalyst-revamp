@@ -723,20 +723,22 @@ $(document).ready(function () {
         $("#search-box-query") &&
         "" != $("#search-box-query").val()
       ) {
-        var a = "query=" + $("#search-box-query").val();
+        var a = $("#search-box-query").val();
         a &&
           ($("#search-box-query").val(""),
-          (window.location.href = "/en/Search?" + a));
+          (window.location.href =
+            "/search-results?indexCatalogue=catalystindex&searchQuery=" + a));
       }
       return !1;
     }),
     $("#search-box-query").keypress(function (b) {
       if (13 == b.keyCode) {
         if ($("#search-box-query") && "" != $("#search-box-query").val()) {
-          var a = "query=" + $("#search-box-query").val();
+          var a = $("#search-box-query").val();
           a &&
             ($("#search-box-query").val(""),
-            (window.location.href = "/en/Search?" + a));
+            (window.location.href =
+              "/search-results?indexCatalogue=catalystindex&searchQuery=" + a));
         }
         return !1;
       }
@@ -769,7 +771,8 @@ $(document).ready(function () {
       $("#search-box-query") &&
         "" != $("#search-box-query").val() &&
         ($("#search-box-query").val(),
-        (window.location.href = "/en/Search?" + data)),
+        (window.location.href =
+          "/search-results?indexCatalogue=catalystindex&searchQuery=" + data)),
       !1
     );
   }),
@@ -777,7 +780,12 @@ $(document).ready(function () {
       var b = parseInt($(this).val());
       if ($("#search-box-query") && "" != $("#search-box-query").val()) {
         var a = "query=" + $("#search-box-query").val();
-        a && (window.location.href = "/en/Search?" + a + "&page=" + b);
+        a &&
+          (window.location.href =
+            "/search-results?indexCatalogue=catalystindex&searchQuery=" +
+            a +
+            "&page=" +
+            b);
       }
     }),
     $(".page-prev").click(function () {
