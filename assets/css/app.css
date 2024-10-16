@@ -150,6 +150,10 @@ div[style="border: 2px solid"] {
 
 ul.breadcrumb li {
   font-size: 14px; }
+  @media (max-width: 767px) {
+    ul.breadcrumb li {
+      font-size: 1rem;
+      letter-spacing: 1.17px; } }
 
 section.program-stats.active .stats-block {
   height: calc(100% - 34px); }
@@ -170,14 +174,6 @@ section.program-stats.active .stats-block {
 
 .search-wrapper .sfContentBlock.sf-Long-text {
   display: flex; }
-
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?6tplkc");
-  src: url("../fonts/icomoon.eot?6tplkc#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?6tplkc") format("truetype"), url("../fonts/icomoon.woff?6tplkc") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block; }
 
 .search__resultspagebox {
   background-color: #fff;
@@ -200,3 +196,9 @@ section.program-stats.active .stats-block {
     margin-bottom: 0 !important; }
   .search__result__list li a.readmore svg {
     margin-left: 10px; }
+
+section.explore-catalyzers:last-of-type {
+  padding-top: 160px; }
+  @media (max-width: 720px) {
+    section.explore-catalyzers:last-of-type {
+      padding-top: 120px; } }

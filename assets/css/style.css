@@ -36,6 +36,17 @@
 
 @font-face {
   font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot");
+  src: url("../fonts/icomoon/icomoon.eot") format("embedded-opentype"),
+    url("../fonts/icomoon/icomoon.ttf") format("truetype"),
+    url("../fonts/icomoon/icomoon.woff") format("woff"),
+    url("../fonts/icomoon/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+/* @font-face {
+  font-family: "icomoon";
   src: url("../fonts/icomoon.eot");
   src: url("../fonts/icomoon.eot") format("embedded-opentype"),
     url("../fonts/icomoon.ttf") format("truetype"),
@@ -44,10 +55,9 @@
   font-weight: normal;
   font-style: normal;
   font-display: block;
-}
+} */
 
-[class^="icon-"],
-[class*=" icon-"] {
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -56,119 +66,175 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  -moz-osx-font-smoothing: grayscale; }
 
-.icon-search1:before {
-  content: "\e901";
-}
+.icon-search-list:before {
+  content: "";
+  color: #fff; }
+
+.icon-clock:before , .icon-clock2::before {
+  content: "";
+  color: #047cc1; }
+
+.icon-map-location:before {
+  content: "";
+  color: #ea4336; }
+
+.icon-arrow-website:before {
+  content: "";
+  color: #fff; }
+
+.icon-minus-circle:before {
+  content: ""; }
+
+.icon-quotes:before {
+  content: "";
+  color: #047cc1; }
+
+.icon-media-share:before {
+  content: "";
+  color: #4e4e4e; }
+
+.icon-linkedin-logo:before , .icon-linkedin-square::before , .icon-linkedin::before {
+  content: ""; }
+
+.icon-quote-mark:before {
+  content: "";
+  color: #fff; }
+
+.icon-social-network-instagram:before , .icon-instagram::before{
+  content: ""; }
+
+.icon-social-network-twitter:before ,.icon-twitter-square::before{
+  content: ""; }
+
+.icon-twitter .path1:before {
+  content: "";
+  color: #4a90e2; }
+
+.icon-twitter .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: white; }
+
+.icon-up-arrow .path1:before {
+  content: "";
+  color: #0069a6; }
+
+.icon-up-arrow .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: white; }
+
+.icon-youtube:before {
+  content: "";
+  color: #f61c0d; }
+
+.icon-arrow-next:before {
+  content: ""; }
+
+.icon-arrow-prev:before {
+  content: ""; }
+
+.icon-arrow-right:before {
+  content: ""; }
+
+.icon-human-resources:before {
+  content: "";
+  color: #047cc1; }
+
+.icon-legal-affairs:before {
+  content: "";
+  color: #047cc1; }
+
+.icon-marketing:before {
+  content: "";
+  color: #047cc1; }
+
+.icon-mentoring:before {
+  content: "";
+  color: #047cc1; }
+
+.icon-strategic-planning:before {
+  content: "";
+  color: #047cc1; }
+
+.icon-web-design:before {
+  content: "";
+  color: #047cc1; }
 
 .icon-search:before {
-  content: "\e986";
-}
-
-.icon-cheveron-up:before {
-  content: "\e906";
-}
-
-.icon-arrow-up:before {
-  content: "\ea32";
-}
-
-.icon-mail-envelope-closed:before {
-  content: "\e904";
-}
-
-.icon-arrow-right:before {
-  content: "\ea34";
-}
-
-.icon-instagram:before {
-  content: "\ea92";
-}
+  content: ""; }
 
 .icon-facebook2:before {
-  content: "\ea91";
-}
+  content: "";
+  color: #fff; }
 
-.icon-twitter-square:before {
-  content: "\e900";
-}
+.icon-youtube2:before , .icon-youtube-square::before{
+  content: "";
+  color: #fff; }
 
-.icon-linkedin:before {
-  content: "\eac9";
-}
+.icon-customer-service:before {
+  content: "";
+  color: #047cc1; }
 
-.icon-youtube:before {
-  content: "\ea9d";
-}
+.icon-troubleshooting:before {
+  content: "";
+  color: #047cc1; }
 
-.icon-clock2:before {
-  content: "\e94f";
-}
+.icon-how-to:before {
+  content: ""; }
 
-.icon-phone:before {
-  content: "\e942";
-}
+.icon-planning:before {
+  content: "";
+  color: #047cc1; }
 
-.icon-share2:before {
-  content: "\ea82";
-}
+.icon-basic-knowledge:before {
+  content: "";
+  color: #047cc1; }
 
-.icon-linkedin-square:before {
-  content: "\eac9";
-}
+.icon-training:before {
+  content: "";
+  color: #047cc1; }
 
-.icon-twitter-square:before {
-  content: "\e901";
-}
+.icon-implementation:before {
+  content: "";
+  color: #047cc1; }
 
-.icon-chevron-right:before {
-  content: "\e900";
-}
+.icon-book:before {
+  content: "";
+  color: #047cc1; }
 
-.icon-search1:before {
-  content: "\1f33e";
-}
-
-.icon-arrow-right:before {
-  content: "\ea34";
-}
-
-.icon-share2:before {
-  content: "\ea82";
-}
-
-.icon-facebook2:before {
-  content: "\ea91";
-}
-
-.icon-instagram:before {
-  content: "\ea92";
-}
-
-.icon-youtube:before {
-  content: "\ea9d";
-}
-
-.icon-linkedin:before {
-  content: "\eac9";
-}
-
-.icon-chevron-left:before {
-  content: "\e902";
-}
-
-.icon-clock2:before {
-  content: "\e94f";
-}
+.icon-envelope:before {
+  content: "";
+  color: #fff; }
 
 .icon-phone:before {
-  content: "\e903";
-}
+  content: "";
+  color: #fff; }
+
+.icon-hand-holding-seedling:before {
+  content: "";
+  color: #047cc1; }
+
+.icon-eye:before {
+  content: "";
+  color: #047cc1; }
+
+.icon-microchip:before {
+  content: "";
+  color: #047cc1; }
+
+.icon-solar-panel:before {
+  content: "";
+  color: #047cc1; }
+
+.icon-users-class:before {
+  content: "";
+  color: #047cc1; }
+
 
 /* placeholder */
 /*:root {

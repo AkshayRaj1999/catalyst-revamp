@@ -186,6 +186,10 @@ div[style="border: 2px solid"] {
 }
 ul.breadcrumb li {
   font-size: 14px;
+  @media (max-width: 767px) {
+    font-size: 1rem;
+    letter-spacing: 1.17px;
+  }
 }
 section.program-stats.active .stats-block {
   height: calc(100% - 34px);
@@ -208,17 +212,17 @@ header .navbar .right-content ul li .icon-search {
 .search-wrapper .sfContentBlock.sf-Long-text {
   display: flex;
 }
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?6tplkc");
-  src: url("../fonts/icomoon.eot?6tplkc#iefix") format("embedded-opentype"),
-    url("../fonts/icomoon.ttf?6tplkc") format("truetype"),
-    url("../fonts/icomoon.woff?6tplkc") format("woff");
-  // url("../fonts/icomoon.svg?6tplkc#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
+// @font-face {
+//   font-family: "icomoon";
+//   src: url("../fonts/icomoon.eot?6tplkc");
+//   src: url("../fonts/icomoon.eot?6tplkc#iefix") format("embedded-opentype"),
+//     url("../fonts/icomoon.ttf?6tplkc") format("truetype"),
+//     url("../fonts/icomoon.woff?6tplkc") format("woff");
+//   // url("../fonts/icomoon.svg?6tplkc#icomoon") format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: block;
+// }
 .search__resultspagebox {
   background-color: #fff;
   padding: 10px 15px;
@@ -247,5 +251,12 @@ header .navbar .right-content ul li .icon-search {
         margin-left: 10px;
       }
     }
+  }
+}
+section.explore-catalyzers:last-of-type{
+  padding-top: 160px;
+  @media (max-width:720px) {
+    padding-top: 120px;
+    
   }
 }

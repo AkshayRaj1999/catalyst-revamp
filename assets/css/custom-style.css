@@ -23,15 +23,15 @@
     display: block;
     margin-bottom: 2rem;
 }
-section.banner .banner-content .about-link a .circle .icon-arrow-right {
+/* section.banner .banner-content .about-link a .circle .icon-arrow-right {
     font-size: 1rem;
-}
-@media (min-width: 1632px) {
+} */
+/* @media (min-width: 1632px) {
     header .navbar .right-content ul li .icon-search {
       font-size: 3rem;
     }
-  }
-  
+  } */
+/*   
 .swiper .swiper-button-next:after {
     font-size: 4rem;
     color: #181822;
@@ -44,15 +44,15 @@ section.banner .banner-content .about-link a .circle .icon-arrow-right {
     color: #181822;
     font-family: "icomoon";
     content: "\e902";
-}
-.icon-mail-envelope-closed{
+} */
+/* .icon-mail-envelope-closed{
     font-size: 2.4rem;
     margin-right: 1rem;
     color: #fff;
 }
 .icon-phone{
     color: #fff;
-}
-.icon-twitter-square{
+} */
+/* .icon-twitter-square{
     font-size: 3.1rem !important;
-}
+} */
