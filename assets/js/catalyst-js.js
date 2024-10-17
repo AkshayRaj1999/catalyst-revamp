@@ -701,7 +701,8 @@ $(document).ready(function () {
           return c;
         })();
         (document.getElementById("JsonCompanyFounders").value =
-          JSON.stringify(b));
+          JSON.stringify(b)),
+          $("#apply-now-form").submit();
           // grecaptcha
           //   .execute($("#sitekey").val(), { action: "apply_now" })
           //   .then(function (a) {
