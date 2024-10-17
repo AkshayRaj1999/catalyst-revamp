@@ -202,3 +202,6 @@ section.explore-catalyzers:last-of-type {
   @media (max-width: 720px) {
     section.explore-catalyzers:last-of-type {
       padding-top: 120px; } }
+
+section.social-media {
+  padding-top: 50px; }

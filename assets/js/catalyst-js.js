@@ -541,84 +541,84 @@ $(document).ready(function () {
       (a.Comment = $("#message").val()),
       (a.Token = $("#g-recaptcha-response-100000").val());
   }
-  $("#save-email").click(function (b) {
-    var a;
-    (b.preventDefault(),
-    $("#newsletter-email-exist").hide(),
-    $("#newsletter-success-message").hide(),
-    $("#newsletter-fail-message").hide(),
-    (a = $("#txtEmailNewsletterSub").val()),
-    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-      a
-    ))
-      ? ($("#newsletter-invalid-email-message").hide(),
-        document.getElementById("cbNewsletterAgree").checked
-          ? ($(".overlay").show(),
-            $("#newsletter-checkbox-message").hide(),
-            grecaptcha
-              .execute($("#sitekey").val(), { action: "newsletter" })
-              .then(function (a) {
-                $.ajax({
-                  type: "POST",
-                  dataType: "json",
-                  url:
-                    "/api/catalystnewslettersubscription/Newsletter?email=" +
-                    $("#txtEmailNewsletterSub").val() +
-                    "&token=" +
-                    $("#g-recaptcha-response-100000").val(),
-                  async: !0,
-                  contentType: "application/json; charset=utf-8",
-                  success: function (a) {
-                    a
-                      ? "Success" == a
-                        ? ($("#newsletter-email-exist").hide(),
-                          $("#newsletter-success-message").show(),
-                          $("#newsletter-fail-message").hide(),
-                          $("#txtEmailNewsletterSub").val(""),
-                          $("#cbNewsletterAgree").prop("checked", !1),
-                          $(".overlay").hide())
-                        : "AlreadyExists" == a
-                        ? ($("#newsletter-email-exist").show(),
-                          $("#newsletter-success-message").hide(),
-                          $("#newsletter-fail-message").hide(),
-                          $(".overlay").hide())
-                        : ($("#newsletter-email-exist").hide(),
-                          $("#newsletter-success-message").hide(),
-                          $("#newsletter-fail-message").show(),
-                          $(".overlay").hide())
-                      : ($("#newsletter-email-exist").hide(),
-                        $("#newsletter-success-message").hide(),
-                        $("#newsletter-fail-message").show(),
-                        $(".overlay").hide());
-                  },
-                  error: function (a) {
-                    a.responseText
-                      ? "Success" == a.responseText
-                        ? ($("#newsletter-email-exist").hide(),
-                          $("#newsletter-success-message").show(),
-                          $("#newsletter-fail-message").hide(),
-                          $("#txtEmailNewsletterSub").val(""),
-                          $("#cbNewsletterAgree").prop("checked", !1),
-                          $(".overlay").hide())
-                        : "AlreadyExists" == a.responseText
-                        ? ($("#newsletter-email-exist").show(),
-                          $("#newsletter-success-message").hide(),
-                          $("#newsletter-fail-message").hide(),
-                          $(".overlay").hide())
-                        : ($("#newsletter-email-exist").hide(),
-                          $("#newsletter-success-message").hide(),
-                          $("#newsletter-fail-message").show(),
-                          $(".overlay").hide())
-                      : ($("#newsletter-email-exist").hide(),
-                        $("#newsletter-success-message").hide(),
-                        $("#newsletter-fail-message").show(),
-                        $(".overlay").hide());
-                  },
-                });
-              }))
-          : ($("#newsletter-checkbox-message").show(), $(".overlay").hide()))
-      : ($("#newsletter-invalid-email-message").show(), $(".overlay").hide());
-  }),
+  // $("#save-email").click(function (b) {
+  //   var a;
+  //   (b.preventDefault(),
+  //   $("#newsletter-email-exist").hide(),
+  //   $("#newsletter-success-message").hide(),
+  //   $("#newsletter-fail-message").hide(),
+  //   (a = $("#txtEmailNewsletterSub").val()),
+  //   /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+  //     a
+  //   ))
+  //     ? ($("#newsletter-invalid-email-message").hide(),
+  //       document.getElementById("cbNewsletterAgree").checked
+  //         ? ($(".overlay").show(),
+  //           $("#newsletter-checkbox-message").hide(),
+  //           grecaptcha
+  //             .execute($("#sitekey").val(), { action: "newsletter" })
+  //             .then(function (a) {
+  //               $.ajax({
+  //                 type: "POST",
+  //                 dataType: "json",
+  //                 url:
+  //                   "/api/catalystnewslettersubscription/Newsletter?email=" +
+  //                   $("#txtEmailNewsletterSub").val() +
+  //                   "&token=" +
+  //                   $("#g-recaptcha-response-100000").val(),
+  //                 async: !0,
+  //                 contentType: "application/json; charset=utf-8",
+  //                 success: function (a) {
+  //                   a
+  //                     ? "Success" == a
+  //                       ? ($("#newsletter-email-exist").hide(),
+  //                         $("#newsletter-success-message").show(),
+  //                         $("#newsletter-fail-message").hide(),
+  //                         $("#txtEmailNewsletterSub").val(""),
+  //                         $("#cbNewsletterAgree").prop("checked", !1),
+  //                         $(".overlay").hide())
+  //                       : "AlreadyExists" == a
+  //                       ? ($("#newsletter-email-exist").show(),
+  //                         $("#newsletter-success-message").hide(),
+  //                         $("#newsletter-fail-message").hide(),
+  //                         $(".overlay").hide())
+  //                       : ($("#newsletter-email-exist").hide(),
+  //                         $("#newsletter-success-message").hide(),
+  //                         $("#newsletter-fail-message").show(),
+  //                         $(".overlay").hide())
+  //                     : ($("#newsletter-email-exist").hide(),
+  //                       $("#newsletter-success-message").hide(),
+  //                       $("#newsletter-fail-message").show(),
+  //                       $(".overlay").hide());
+  //                 },
+  //                 error: function (a) {
+  //                   a.responseText
+  //                     ? "Success" == a.responseText
+  //                       ? ($("#newsletter-email-exist").hide(),
+  //                         $("#newsletter-success-message").show(),
+  //                         $("#newsletter-fail-message").hide(),
+  //                         $("#txtEmailNewsletterSub").val(""),
+  //                         $("#cbNewsletterAgree").prop("checked", !1),
+  //                         $(".overlay").hide())
+  //                       : "AlreadyExists" == a.responseText
+  //                       ? ($("#newsletter-email-exist").show(),
+  //                         $("#newsletter-success-message").hide(),
+  //                         $("#newsletter-fail-message").hide(),
+  //                         $(".overlay").hide())
+  //                       : ($("#newsletter-email-exist").hide(),
+  //                         $("#newsletter-success-message").hide(),
+  //                         $("#newsletter-fail-message").show(),
+  //                         $(".overlay").hide())
+  //                     : ($("#newsletter-email-exist").hide(),
+  //                       $("#newsletter-success-message").hide(),
+  //                       $("#newsletter-fail-message").show(),
+  //                       $(".overlay").hide());
+  //                 },
+  //               });
+  //             }))
+  //         : ($("#newsletter-checkbox-message").show(), $(".overlay").hide()))
+  //     : ($("#newsletter-invalid-email-message").show(), $(".overlay").hide());
+  // }),
     $("#btnsubmitcontactus").click(function () {
       $("html,body").scrollTop(0),
         $("#contactformError").hide(),
@@ -701,14 +701,14 @@ $(document).ready(function () {
           return c;
         })();
         (document.getElementById("JsonCompanyFounders").value =
-          JSON.stringify(b)),
-          grecaptcha
-            .execute($("#sitekey").val(), { action: "apply_now" })
-            .then(function (a) {
-              (document.getElementById("Token").value = a),
-                $(".overlay").show(),
-                $("#apply-now-form").unbind("submit").submit();
-            });
+          JSON.stringify(b));
+          // grecaptcha
+          //   .execute($("#sitekey").val(), { action: "apply_now" })
+          //   .then(function (a) {
+          //     (document.getElementById("Token").value = a),
+          //       $(".overlay").show(),
+          //       $("#apply-now-form").unbind("submit").submit();
+          //   });
       } else $("#submissionerror").show(), $("html,body").scrollTop(0);
     }),
     $("#search-box-icon").click(function (b) {

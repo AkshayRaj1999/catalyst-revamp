@@ -14227,7 +14227,7 @@ section.program-stats .section-title {
   margin-top: 1rem;
   transform: translateX(-30rem);
   opacity: 0.5;
-  transition: 2.5s;
+  transition: 1s;
 }
 
 @media (min-width: 1632px) {
@@ -14245,7 +14245,7 @@ section.program-stats .title-text {
   padding: 0;
   transform: translateX(-30rem);
   opacity: 0.5;
-  transition: 2.5s;
+  transition: 1s;
 }
 
 @media (min-width: 1632px) {
@@ -14274,7 +14274,7 @@ section.program-stats .stats-block {
   border-bottom: 1px solid #ffffff66;
   transform: translateX(30rem);
   opacity: 0.5;
-  transition: 2.5s;
+  transition: 1s;
 }
 
 @media (min-width: 1632px) {
@@ -14334,7 +14334,7 @@ section.startup-support .section-title {
   margin-bottom: 7rem;
   transform: translateY(-10rem);
   opacity: 0.5;
-  transition: 2.5s;
+  transition: 1s;
 }
 
 @media (min-width: 1632px) {
@@ -14352,7 +14352,7 @@ section.startup-support .section-title {
 section.startup-support .support-block {
   margin-bottom: 7rem;
   opacity: 0;
-  transition: 2s 1s;
+  transition:  1s;
 }
 
 @media (min-width: 1632px) {
@@ -14541,7 +14541,7 @@ section.what-we-offer .wrapper .image-block {
   padding: 3.2rem 0 3.2rem 4.5rem;
   transform: translateX(20rem);
   opacity: 0;
-  transition: 2.5s 0.5s;
+  transition:  1s;
 }
 
 @media (min-width: 1632px) {
@@ -14596,7 +14596,7 @@ section.what-we-offer .wrapper .content-block {
   padding-right: 2rem;
   transform: translateX(-20rem);
   opacity: 0;
-  transition: 2.5s 0.5s;
+  transition:  1s
 }
 
 @media (min-width: 1632px) {
@@ -14872,7 +14872,7 @@ section.explore-catalyzers.active {
   opacity: 0;
   transform-style: preserve-3d;
   transform: rotateY(90deg);
-  transition: all 2.5s 1s;
+  transition: all 1s;
 }
 
 @media (min-width: 1632px) {
@@ -15037,7 +15037,7 @@ section.explore-catalyzers.active {
   margin-bottom: 4rem;
   transform: translateY(-10rem);
   opacity: 0.5;
-  transition: 2.5s 0.5s;
+  transition:1s;
 }
 
 @media (min-width: 1632px) {
@@ -15184,7 +15184,7 @@ section.explore-catalyzers.active {
   opacity: 0;
   transform-style: preserve-3d;
   transform: rotateX(-45deg);
-  transition: all 2.5s 1s;
+  transition: all  1s;
 }
 
 @media (max-width: 767px) {
