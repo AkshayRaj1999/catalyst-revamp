@@ -283,14 +283,22 @@ $(document).ready(function () {
       processData: false,
       data: formData,
       success: function (result) {
-        if (result == "success") {
-          $("#thankYouMessage").show();
-          $("#contactFormSuccess").show();
-          $("#contact-form")[0].reset();
-        } else if (result == "error") {
-          $("#thankYouMessage").show();
-          $("#contactformError").show();
-          $("#btnsubmitcontactus").prop("disabled", false);
+        if (result.message == "success") {
+          $(".overlay").hide();
+          $("#submissionerror").hide();
+          $(".apply-now-form").append(`<h1  class="msg success" style="">
+        You have successfully submitted your details!
+    </h1>`);
+          $("#apply-now-form").hide();
+          $("#apply-now-form")[0].reset();
+        } else if (result.message == "error") {
+          $("#submissionerror").hide();
+          $(".overlay").hide();
+          $("#apply-now-form").hide();
+          $("#apply-now-form")[0].reset();
+          $(".apply-now-form").append(`<h1  class="msg error" style="">
+        SOmething went wronf. Try again later!
+    </h1>`);
         }
       },
       error: function (ex) {
